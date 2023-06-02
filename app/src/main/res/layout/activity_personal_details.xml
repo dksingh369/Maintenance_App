@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutPersonal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".PersonalDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:padding="0dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="50dp"
+                android:orientation="vertical"
+                android:onClick="click">
+
+
+                <ImageView
+                    android:id="@+id/imageViewSelf"
+                    android:layout_width="398dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/aailogohindi" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Details :"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:text="Name"
+                        />
+
+                    <EditText
+                        android:id="@+id/editTextP"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Officer Carrying out Maintenance"
+                        android:inputType="textPersonName"
+                        android:textAlignment="textStart"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:text="Designation"
+                        />
+
+                    <Spinner
+                        android:id="@+id/spinnerP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:entries="@array/posts" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:text="Employee Number"
+                        />
+
+                    <EditText
+                        android:id="@+id/editTextEmpID"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="Employee Number"
+                        android:inputType="textPersonName"
+                        android:textAlignment="textStart"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Station Details :"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:text="Station Name"
+                        />
+
+                    <EditText
+                        android:id="@+id/editTextAirportName"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:ems="10"
+                        android:hint="ICAO Designator"
+                        android:inputType="textPersonName"
+                        android:textAlignment="textStart"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView74"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:text="Email ID of UIC/OIC"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/editTextEmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:ems="15"
+                            android:layout_weight="1"
+                            android:hint="Email ID of UIC/OIC"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:text="&#64;aai.aero"
+                            android:textAlignment="textStart"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewWatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="All fields are mandatory"
+                    android:textStyle="italic"
+                    android:textColor="@color/textViewColor" />
+
+                <TextView
+                    android:id="@+id/locationTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewSelf"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/dateTimeTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/locationTextView"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/dateTimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/locationTextView"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:onClick="verifyClicked"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Submit" />
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="© 2019-2020 Deepak Singh"
+                    android:textAlignment="center"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/teal_700" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
