@@ -21,12 +21,12 @@ public class DvorGcel755Activity extends AppCompatActivity {
 
         daily = (Button) findViewById(R.id.daily);
         weekly = (Button) findViewById(R.id.weekly);
-        fortnightly = (Button) findViewById(R.id.fortnightly);
+        //fortnightly = (Button) findViewById(R.id.fortnightly);
         monthly = (Button) findViewById(R.id.monthly);
         quarterly = (Button) findViewById(R.id.quarterly);
-        halfYearly = (Button) findViewById(R.id.halfYearly);
-        yearly = (Button) findViewById(R.id.yearly);
-        miscellaneous = (Button) findViewById(R.id.miscellaneous);
+        //halfYearly = (Button) findViewById(R.id.halfYearly);
+        //yearly = (Button) findViewById(R.id.yearly);
+        //miscellaneous = (Button) findViewById(R.id.miscellaneous);
 
         Intent intent = getIntent();
 

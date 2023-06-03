@@ -326,7 +326,7 @@ public class NavAidsDVORSELEX1150HalfYearlyActivity extends AppCompatActivity {
 
         textView1 = findViewById(R.id.textView1);
 
-        textView2 = findViewById(R.id.textView2);
+        //textView2 = findViewById(R.id.textView2);
         textView3 = findViewById(R.id.textView3);
         textView4 = findViewById(R.id.textView4);
 

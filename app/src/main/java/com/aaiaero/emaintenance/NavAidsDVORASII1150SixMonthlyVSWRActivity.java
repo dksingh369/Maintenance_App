@@ -143,11 +143,11 @@ public class NavAidsDVORASII1150SixMonthlyVSWRActivity extends AppCompatActivity
 
         TextView textView = (TextView) findViewById(R.id.textViewDate);
 
-        textView1 = findViewById(R.id.textView1);
+        //textView1 = findViewById(R.id.textView1);
 
-        textView2 = findViewById(R.id.textView2);
+        //textView2 = findViewById(R.id.textView2);
         textView3 = findViewById(R.id.textView3);
-        textView4 = findViewById(R.id.textView4);
+        //textView4 = findViewById(R.id.textView4);
 
         SimpleDateFormat date1 = new SimpleDateFormat("dd.MM.yyyy, HH:mm");
         Date = date1.format(new Date());
