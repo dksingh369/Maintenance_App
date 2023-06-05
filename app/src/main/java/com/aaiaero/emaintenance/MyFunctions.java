@@ -407,7 +407,7 @@ public class MyFunctions {
 
         switch(string) {
             case "w": // For Weekly Code
-                output = String.valueOf(weekNo) + "/" + String.valueOf(yearNo);
+                output = String.valueOf(yearNo) + "-W" + String.valueOf(weekNo);
                 break;
             case "fn": // For Fort Nightly Code
                 int fortNightlyNo = dayNo / 15 + 1;
