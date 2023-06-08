@@ -27,9 +27,8 @@ public class DVRRetia extends AppCompatActivity {
 
     public void monthly (View view){
 
-       // Intent intent = new Intent(getApplicationContext(), NavAidsDVORThales432MonthlyActivity.class);
-        //startActivity(intent);
-
+        Intent intent = new Intent(getApplicationContext(), VHFDVRRetiaMonthlyActivity.class);
+        startActivity(intent);
     }
 
 
