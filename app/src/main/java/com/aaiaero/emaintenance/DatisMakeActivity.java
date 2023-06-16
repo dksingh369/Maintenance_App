@@ -26,12 +26,18 @@ public class DatisMakeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Intent intent = new Intent(getApplicationContext(),DatisTermaActivity.class);
+                startActivity(intent);
+
             }
         });
 
         sistek.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(),DatisSistekActivity.class);
+                startActivity(intent);
 
             }
         });

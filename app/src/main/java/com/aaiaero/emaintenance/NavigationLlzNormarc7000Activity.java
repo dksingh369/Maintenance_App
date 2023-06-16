@@ -32,8 +32,8 @@ public class NavigationLlzNormarc7000Activity extends AppCompatActivity {
 
     public void weeklyClicked (View view){
         // Launch the DVR Equipment Room Activity
-        //Intent intent = new Intent(getApplicationContext(),ADSBDailyActivity.class);
-      //  startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(),LlzNormarc7000WeeklyActivity.class);
+        startActivity(intent);
 
 
     }
@@ -41,14 +41,15 @@ public class NavigationLlzNormarc7000Activity extends AppCompatActivity {
     public void monthlyClicked (View view){
         // Launch the VCS Equipment Room Activity
 
-        //Intent intent = new Intent(getApplicationContext(),ADSBComsoftDailyActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(),LlzNormarc7000MonthlyActivity.class);
+        startActivity(intent);
 
     }
 
     public void quarterlyClicked (View view){
         // Launch the RCAG Equipment Room Activity
-
+        Intent intent = new Intent(getApplicationContext(),LlzNormarc7000QuarterlyActivity.class);
+        startActivity(intent);
 
 
     }
@@ -56,14 +57,30 @@ public class NavigationLlzNormarc7000Activity extends AppCompatActivity {
     public void sixmonthlyClicked (View view){
         // Launch the UAH Equipment Room Activity
 
-
+        Intent intent = new Intent(getApplicationContext(),LlzNormarc7000SixActivity.class);
+        startActivity(intent);
 
     }
 
     public void annualClicked (View view){
         // Launch the ADSB Equipment Room Activity
-        //Intent intent = new Intent(getApplicationContext(),ADSBActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(),LlzNormarc7000AnnualActivity.class);
+        startActivity(intent);
+
+    }
+
+    public void wfrClicked (View view){
+        // Launch the UAH Equipment Room Activity
+
+        Intent intent = new Intent(getApplicationContext(),LlzNormarc7000WfrActivity.class);
+        startActivity(intent);
+
+    }
+
+    public void mfrClicked (View view){
+        // Launch the ADSB Equipment Room Activity
+        Intent intent = new Intent(getApplicationContext(),LlzNormarc7000MfrActivity.class);
+        startActivity(intent);
 
     }
 

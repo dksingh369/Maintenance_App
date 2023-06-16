@@ -83,37 +83,11 @@ public class AmssEcilWeeklyActivity extends AppCompatActivity {
                 editText24 = (EditText) findViewById(R.id.editTextAMSSecilWEEKLYrmk)};
 
         //Define and Initialize all Switches serially here
-      /*  Switch switch2,switch3,switch4,switch5,switch6,switch7,switch8,switch9,switch10,switch11,switch12;
-        switchArray = new Switch[]{
-                switch2 = (Switch) findViewById(R.id.switch2),
-                switch3 = (Switch) findViewById(R.id.switch3),
-                switch4 = (Switch) findViewById(R.id.switch4),
-                switch5 = (Switch) findViewById(R.id.switch5),
-                switch6 = (Switch) findViewById(R.id.switch6),
-                switch7 = (Switch) findViewById(R.id.switch7),
-                switch8 = (Switch) findViewById(R.id.switch8),
-                switch9 = (Switch) findViewById(R.id.switch9),
-                switch10 = (Switch) findViewById(R.id.switch10),
-                switch11 = (Switch) findViewById(R.id.switch11),
-                switch12 = (Switch) findViewById(R.id.switch12)};
-*/
+
         //Define and Initialize all Spinners serially here
-       /* Spinner spinner1,spinner2,spinner3,spinner4,spinner5,spinner6,spinner7,spinner8,spinner9;
-        spinnerArray = new Spinner[]{
-                spinner9 = (Spinner) findViewById(R.id.spinner9),
-                spinner6 = (Spinner) findViewById(R.id.spinner6),
-                spinner8 = (Spinner) findViewById(R.id.spinner8),
-                spinner5 = (Spinner) findViewById(R.id.spinner5),
-                spinner7 = (Spinner) findViewById(R.id.spinner7),
-                spinner4 = (Spinner) findViewById(R.id.spinner4),
-                spinner3 = (Spinner) findViewById(R.id.spinner3),
-                spinner2 = (Spinner) findViewById(R.id.spinner2),
-                spinner1 = (Spinner) findViewById(R.id.spinner1)};
-*/
+
         //---------------------To Set View in Current Activity------------------
         // Fixed for all the activity---------------------------------------------------------------
-        ImageView imageView10 = (ImageView) findViewById(R.id.imageView10);
-        //imageView10.setImageBitmap(PersonalDetailsActivity.photo);
         TextView textView7 = (TextView) findViewById(R.id.textView7);
         textView7.setText("Name: " + PersonalDetailsActivity.naam);
         TextView textView8 = (TextView) findViewById(R.id.textView8);
@@ -122,6 +96,13 @@ public class AmssEcilWeeklyActivity extends AppCompatActivity {
         textView10.setText("Emp No.: " + PersonalDetailsActivity.EmpID);
         TextView textView9 = (TextView) findViewById(R.id.textView9);
         textView9.setText("Location: " + MainActivity.latLong1);
+
+        TextView textViewDate = (TextView) findViewById(R.id.textViewDate);
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:yyyy HH:mm");
+        String strData = sdf.format(calendar.getTime());
+        textViewDate.setText(strData);
+
 
         Intent receivedIntent = getIntent();
         //now get the itemID we passed as an extra
@@ -279,7 +260,7 @@ public class AmssEcilWeeklyActivity extends AppCompatActivity {
                 Manifest.permission.WRITE_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
 
 
-        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Communication/AMSS/ECIL/Weekly/";// Change Here------------------
+        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/AMSS/ECIL/Weekly/";// Change Here------------------
         File file = new File(directory_path);
         if (!file.exists()) {
             file.mkdirs();
@@ -301,7 +282,7 @@ public class AmssEcilWeeklyActivity extends AppCompatActivity {
         String specificCode = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());// Change Here----------------------------
         //This function saves all the data to parse Server
         //myFunctions.saveToParse(String targetPdf, String fileName, String Equipment,String Schedule_Type,String EditTextData)
-        myFunctions.saveToParse(targetPdf, fileName,"AMSS ECIL","Weekly",outputEditText,MyFunctions.specificCode("w"),"outputSwitch", "outputSpinner");// Change Here-----------------------
+        myFunctions.saveToParse(targetPdf, fileName,"AMSS","Weekly",outputEditText,MyFunctions.specificCode("w"),"outputSwitch", "outputSpinner");// Change Here-----------------------
 
         // This function will send eMail using JavaMailAPI
         //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)
