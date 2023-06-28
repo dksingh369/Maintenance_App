@@ -618,7 +618,31 @@
             android:exported="false" />
         <activity
             android:name=".NavigationLlzNormarc7000Activity"
-            android:exported="false" /> <!-- Shubham's Activities Ends -->
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc7000SixActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc7000QuarterlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc7000AnnualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc7000WeeklyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc7000MonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc7000MfrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc7000WfrActivity"
+            android:exported="false" />
+
+        <!-- Shubham's Activities Ends -->
+
         <!-- Sunny's Activities Starts -->
         <activity
             android:name=".SurveilanceMssrIndraSixMonthlyActivity"
