@@ -210,7 +210,7 @@ public class PersonalDetailsActivity extends AppCompatActivity implements View.O
         if (imageTaken) {
 
             if (editText.getText().toString().length() != 0 &&
-                    spinnerP.getSelectedItemId() != 0 && empppID.getText().toString().length() != 0) {
+                    spinnerP.getSelectedItemId() != 0 && empppID.getText().toString().length() != 0&& email.getText().toString().length() != 0&& airportName.getText().toString().length() != 0) {
                 //Go to next Intent
                 String editText2 = spinnerP.getSelectedItem().toString();
 
