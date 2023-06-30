@@ -35,7 +35,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class LlzNormarc7000AnnualActivity extends AppCompatActivity {
+public class GpNormarc7000AnnualActivity extends AppCompatActivity {
 
     private MyFunctions myFunctions = new MyFunctions(this);//--1--//Add this
     private MySignature mySignature = new MySignature(this);
@@ -44,76 +44,73 @@ public class LlzNormarc7000AnnualActivity extends AppCompatActivity {
     private EditText[] editTextArray;//Copy
     private Switch[] switchArray = {};//Copy
     private Spinner[] spinnerArray = {};//Copy
-    private String thisActivityName = "LlzNormarc7000AnnualActivity"; //Change Here as per your class name
+    private String thisActivityName = "GpNormarc7000AnnualActivity"; //Change Here as per your class name
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_llz_normarc7000_annual);
-
+        setContentView(R.layout.activity_gp_normarc7000_annual);
         //Define and Initialize all EditTexts serially here
         EditText editText1, editText2, editText3, editText4, editText5, editText6, editText7, editText8,editText9, editText10, editText11, editText12, editText13, editText14, editText15, editText16,
                 editText17, editText18, editText19, editText20, editText21, editText22, editText23, editText24,editText25, editText26, editText27, editText28, editText29, editText30, editText31, editText32,
                 editText33, editText34, editText35, editText36, editText37, editText38, editText39, editText40, editText41, editText42, editText43, editText44, editText45, editText46, editText47, editText48,
-                editText49, editText50;
+                editText49, editText50,editText51;
         editTextArray = new EditText[]{
-                editText1 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualStation),
-                editText2 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualModel),
-                editText3 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualRWY),
-                editText4 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCat),
-                editText5 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualFrequency),
-                editText6 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualIdent),
-                editText7 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualFreqTx1),
-                editText8 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualFreqTx2),
-                editText9 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCarrFreqTx1),
-                editText10 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCarrFreqTx2),
-                editText11 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualIdentModTx1),
-                editText12 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualIdentModTx2),
-                editText13 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS1CSB),
-                editText14 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS2CSB),
-                editText15 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR1CSB),
-                editText16 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR2CSB),
-                editText17 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS1SBO),
-                editText18 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS2SBO),
-                editText19 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR1SBO),
-                editText20 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR2SBO),
-                editText21 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS1CORR),
-                editText22 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS2CORR),
-                editText23 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR1CORR),
-                editText24 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR2CORR),
-                editText25 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS1LF),
-                editText26 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS2LF),
-                editText27 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR1LF),
-                editText28 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR2LF),
-                editText29 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS1RF),
-                editText30 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS2RF),
-                editText31 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR1RF),
-                editText32 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR2RF),
-                editText33 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS1DDM),
-                editText34 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS2DDM),
-                editText35 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR1DDM),
-                editText36 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR2DDM),
-                editText37 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS1SDM),
-                editText38 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS2SDM),
-                editText39 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR1SDM),
-                editText40 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR2SDM),
-                editText41 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS1Mod),
-                editText42 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCRS2Mod),
-                editText43 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR1Mod),
-                editText44 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLR2Mod),
-                editText45 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCOUPower1),
-                editText46 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCOUPower2),
-                editText47 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLRPower1),
-                editText48 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualCLRPower2),
-                editText49 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualMonDelay),
-                editText50 = (EditText) findViewById(R.id.editTextLlzNormarcAnnualRemarks)};
+                editText1 = (EditText) findViewById(R.id.editTextGpNormarcAnnualStation),
+                editText2 = (EditText) findViewById(R.id.editTextGpNormarcAnnualModel),
+                editText3 = (EditText) findViewById(R.id.editTextGpNormarcAnnualRWY),
+                editText4 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCat),
+                editText5 = (EditText) findViewById(R.id.editTextGpNormarcAnnualFrequency),
+                editText6 = (EditText) findViewById(R.id.editTextGpNormarcAnnualFreqTx1),
+                editText7 = (EditText) findViewById(R.id.editTextGpNormarcAnnualFreqTx2),
+                editText8 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCarrFreqTx1),
+                editText9 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCarrFreqTx2),
+                editText10 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCarrMod90Tx1),
+                editText11 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCarrMod90Tx2),
+                editText12 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCarrMod150Tx1),
+                editText13 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCarrMod150Tx2),
+                editText14 = (EditText) findViewById(R.id.editTextGpNormarcAnnualPhaseModTx1),
+                editText15 = (EditText) findViewById(R.id.editTextGpNormarcAnnualPhaseModTx2),
+
+                editText16 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS1CSB),
+                editText17 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS2CSB),
+                editText18 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR1CSB),
+                editText19 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR2CSB),
+                editText20 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS1SBO),
+                editText21 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS2SBO),
+                editText22 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR1SBO),
+                editText23 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR2SBO),
+                editText24 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS1CORR),
+                editText25 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS2CORR),
+                editText26 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR1CORR),
+                editText27 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR2CORR),
+                editText28 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS1LF),
+                editText29 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS2LF),
+                editText30 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR1LF),
+                editText31 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR2LF),
+                editText32 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS1RF),
+                editText33 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS2RF),
+                editText34 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR1RF),
+                editText35 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR2RF),
+
+                editText36 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS1DDM),
+                editText37 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS2DDM),
+                editText38 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR1DDM),
+                editText39 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR2DDM),
+                editText40 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS1SDM),
+                editText41 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCRS2SDM),
+                editText42 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR1SDM),
+                editText43 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLR2SDM),
+                editText44 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCOUPower1),
+                editText45 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCOUPower2),
+                editText46 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLRPower1),
+                editText47 = (EditText) findViewById(R.id.editTextGpNormarcAnnualCLRPower2),
+                editText48 = (EditText) findViewById(R.id.editTextGpNormarcAnnualMonDelay),
+                editText49 = (EditText) findViewById(R.id.editTextGpNormarcAnnualNFSet),
+                editText50 = (EditText) findViewById(R.id.editTextGpNormarcAnnualInhibitSet),
+                editText51 = (EditText) findViewById(R.id.editTextGpNormarcAnnualRemarks)};
 
 //Define and Initialize all Switches serially here
-        Switch  switch1,switch2;
-        switchArray = new Switch[]{
-                switch1 = (Switch) findViewById(R.id.switchLlzNormarcAnnualNF),
-                switch2 = (Switch) findViewById(R.id.switchLlzNormarcAnnualInhibit)};
-
 
         //Define and Initialize all Spinners serially here
 
@@ -189,9 +186,9 @@ public class LlzNormarc7000AnnualActivity extends AppCompatActivity {
 
         String[] editTextDataForPDF = myFunctions.seperateEditText(outputEditText);
 
-        String outputSwitch = myFunctions.getSwitchStatusForPDF(switchArray);
+       // String outputSwitch = myFunctions.getSwitchStatusForPDF(switchArray);
 
-        String[] switchDataForPDF = myFunctions.seperateSwitchData(outputSwitch);
+     //   String[] switchDataForPDF = myFunctions.seperateSwitchData(outputSwitch);
 
 //        String outputSpinner = myFunctions.getSpinnerStatusForPDF(spinnerArray);
 //
@@ -213,17 +210,15 @@ public class LlzNormarc7000AnnualActivity extends AppCompatActivity {
 
         Bitmap bmp,scaledbmp;
 
-        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.llznormarc7000annual1);
+        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.gpnormarc7000annual1);
         scaledbmp = Bitmap.createScaledBitmap(bmp,723,1024,false);
 
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
 
         titlePaint.setTextSize(12);
 
-        int[] editTextXPixel = {151,575,124,198,313,459,437,520,437,520,437,520,360,426,492,554,360,426,492,554,360,426,492,554,360,426,492,554,360,426,492,554,
-                360,426,492,554,360,426,492,554,360,426,492,554};
-        int[] editTextYPixel = {138,138,157,157,157,157,285,285,385,385,460,460,613,613,613,613,643,643,643,643,672,672,672,672,700,700,700,700,730,730,730,730,
-                798,798,798,798,842,842,842,842,879,879,879,879};
+        int[] editTextXPixel = {152,580,127,221,367,424,509,424,509,424,509,424,509,424,509};
+        int[] editTextYPixel = {153,153,171,171,171,355,355,470,470,565,565,665,665,765,765};
 
         // Change till here as per requirements ----------------------------------------------------
 
@@ -242,7 +237,7 @@ public class LlzNormarc7000AnnualActivity extends AppCompatActivity {
         // Change as per your requirement-----------------------------------------------------------
         titlePaint.setTextSize(12);
 
-        canvas.drawText(strData,568,157,titlePaint);//Printing Date on PDF
+        canvas.drawText(strData,555,171,titlePaint);//Printing Date on PDF
 
         myPdfdocument.finishPage(myPage1);
 
@@ -257,48 +252,58 @@ public class LlzNormarc7000AnnualActivity extends AppCompatActivity {
         PdfDocument.Page myPage2 = myPdfdocument.startPage(myPageInfo2);
 
         canvas = myPage2.getCanvas();
-        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.llznormarc7000annual2);
+        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.gpnormarc7000annual2);
         scaledbmp = Bitmap.createScaledBitmap(bmp,723,1024,false);
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
 
 
         titlePaint.setTextSize(12);
 
-        int[] editTextXPixel2 = {433,535,433,535,440,370,370,100};
-        int[] editTextYPixel2 = {178,178,213,213,313,421,448,514};
-
-        int[] switchXPixel = {510,510};
-        int[] switchYPixel = {423,448};
-
+        int[] editTextXPixel2 = {383,446,518,580,383,446,518,580,383,446,518,580,383,446,518,580,383,446,518,580,383,446,518,580,383,446,518,580,435,545,435,545,480,380,380,100};
+        int[] editTextYPixel2 = {195,195,195,195,226,226,226,226,251,251,251,251,278,278,278,278,305,305,305,305,397,397,397,397,425,425,425,425,520,520,567,567,661,742,768,814};
 
         for(int i = 0; i < editTextXPixel2.length; i++){
             canvas.drawText( editTextDataForPDF[i+editTextXPixel.length],editTextXPixel2[i],editTextYPixel2[i],titlePaint);
         }
-        for(int i = 0; i < switchXPixel.length; i++){
-            canvas.drawText( switchDataForPDF[i],switchXPixel[i],switchYPixel[i],titlePaint);
-        }
 
-        titlePaint.setTextSize(12);
-        paint.setTextAlign(Paint.Align.LEFT);
-        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 100, 585, paint);
 
         myPdfdocument.finishPage(myPage2);
 
         //-------------------------End of Page 2-----------------
+
+        //----------------------Page 3---------------------
+
+        PdfDocument.PageInfo myPageInfo3 = new PdfDocument.PageInfo.Builder(723, 1024, 3).create();
+
+        // start a page
+        PdfDocument.Page myPage3 = myPdfdocument.startPage(myPageInfo3);
+
+        canvas = myPage3.getCanvas();
+        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.gpnormarc7000annual3);
+        scaledbmp = Bitmap.createScaledBitmap(bmp,723,1024,false);
+        canvas.drawBitmap(scaledbmp,0 , 0, paint);
+
+        titlePaint.setTextSize(12);
+        paint.setTextAlign(Paint.Align.LEFT);
+        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 100, 140, paint);
+
+        myPdfdocument.finishPage(myPage3);
+
+        //-------------------------End of Page 3-----------------
 
         ActivityCompat.requestPermissions(this, new String[]{
 
                 Manifest.permission.WRITE_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
 
 
-        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Navigation/LLZNormarc7000/Annual/";// Change Here------------------
+        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Navigation/GPNormarc7000/Annual/";// Change Here------------------
         File file = new File(directory_path);
         if (!file.exists()) {
             file.mkdirs();
         }
         //String targetPdf = directory_path + "test.pdf";
         //String fileName = "Daily ADSB " + dateFormat.format(dateObj) + ".pdf";
-        String fileName = "Annual LLZ Normarc " + strData + ".pdf"; // Change Here--------------------------
+        String fileName = "Annual GP Normarc " + strData + ".pdf"; // Change Here--------------------------
         String targetPdf = directory_path + fileName;
         File filePath = new File(targetPdf);
         try {
@@ -313,12 +318,12 @@ public class LlzNormarc7000AnnualActivity extends AppCompatActivity {
         String specificCode = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());// Change Here----------------------------
         //This function saves all the data to parse Server
         //myFunctions.saveToParse(String targetPdf, String fileName, String Equipment,String Schedule_Type,String EditTextData)
-        myFunctions.saveToParse(targetPdf, fileName,"ILS","Yearly",outputEditText,MyFunctions.specificCode("y"),outputSwitch, "outputSpinner");// Change Here-----------------------
+        myFunctions.saveToParse(targetPdf, fileName,"ILS","Yearly",outputEditText,MyFunctions.specificCode("y"),"outputSwitch", "outputSpinner");// Change Here-----------------------
 
         // This function will send eMail using JavaMailAPI
         //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)
         myFunctions.sendEmail(PersonalDetailsActivity.emailTo + "@aai.aero",
-                "Annual Maintenance of Normarc LLZ done.",//Change Here-----------------------------
+                "Annual Maintenance of Normarc GP done.",//Change Here-----------------------------
                 "Maintenance Schedule is attached. Please verify.", targetPdf, fileName);
 
 
