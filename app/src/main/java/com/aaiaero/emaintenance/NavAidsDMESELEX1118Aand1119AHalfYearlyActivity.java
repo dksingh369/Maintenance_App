@@ -342,7 +342,7 @@ public class NavAidsDMESELEX1118Aand1119AHalfYearlyActivity extends AppCompatAct
         //This function saves all the data to parse Server
         // myFunctions.saveToParse(String targetPdf, String fileName, String Equipment,String Schedule_Type,String EditTextData)
 
-        myFunctions.saveToParse(targetPdf, fileName,"DME","Half Yearly",outputEditText,MyFunctions.specificCode("d"),outputSwitch, "outputSpinner");// Change Here-----------------------
+        myFunctions.saveToParse(targetPdf, fileName,"DME","SixMonthly",outputEditText,MyFunctions.specificCode("d"),outputSwitch, "outputSpinner");// Change Here-----------------------
 
         // This function will send eMail using JavaMailAPI
 
