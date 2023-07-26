@@ -296,6 +296,7 @@
             android:name=".NavAidsDVORGcel755DailyActivity"
             android:exported="false" />
 
+
         <!-- Akshay's Activities Ends -->
 
 
@@ -449,8 +450,46 @@
             android:exported="false" />
         <activity
             android:name=".AmssIpInhouseMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatisSistekMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatisSistekDailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatisSistekActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatisTermaWeeklyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatisTermaDailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatisTermaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VhfTxEcilDailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VhfRxEcilSixMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VhfRxEcilMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VhfRxEcilDailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VHFDVRRetiaMonthlyActivity"
             android:exported="false" /> <!-- Naveen's Activities Ends -->
         <!-- Shubham's Activities Starts -->
+
+
+            android:exported="false" /> <!-- Naveen's Activities Ends -->
+        <!-- Shubham's Activities Starts -->
+
         <activity
             android:name=".LlzAsiiQuarterly2Activity"
             android:exported="false" />
@@ -640,6 +679,26 @@
         <activity
             android:name=".LlzNormarc7000WfrActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".GpNormarc7000AnnualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GpNormarc7000SixActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GpNormarc7000QuarterlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GpNormarc7000WeeklyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GpNormarc7000DailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationGpNormarc7000Activity"
+            android:exported="false" />
+
 
         <!-- Shubham's Activities Ends -->
 
