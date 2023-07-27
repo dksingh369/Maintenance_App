@@ -267,6 +267,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".2"
+                    android:textAlignment="center"
                     android:text="TP1"
                     android:textColor="@color/black" />
 
@@ -275,12 +276,14 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".25"
+                    android:textAlignment="center"
                     android:hint=" OK"
                     android:textSize="14sp" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".2"
+                    android:textAlignment="center"
                     android:text="TP2"
                     android:textColor="@color/black" />
 
@@ -289,12 +292,14 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".25"
+                    android:textAlignment="center"
                     android:hint=" OK"
                     android:textSize="14sp" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".2"
+                    android:textAlignment="center"
                     android:text="MS1"
                     android:textColor="@color/black" />
 
@@ -303,12 +308,14 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".25"
+                    android:textAlignment="center"
                     android:hint=" OK"
                     android:textSize="14sp" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".2"
+                    android:textAlignment="center"
                     android:text="MS2"
                     android:textColor="@color/black" />
 
@@ -317,6 +324,7 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".25"
+                    android:textAlignment="center"
                     android:hint=" OK"
                     android:textSize="14sp" />
 
