@@ -86,8 +86,6 @@ public class VcsSittiDailyIPTBB extends AppCompatActivity {
 
 
         // Fixed for all the activity---------------------------------------------------------------
-        ImageView imageView10 = (ImageView) findViewById(R.id.imageView10);
-        imageView10.setImageBitmap(PersonalDetailsActivity.photo);
         TextView textView7 = (TextView) findViewById(R.id.textView7);
         textView7.setText("Name: " + PersonalDetailsActivity.naam);
         TextView textView8 = (TextView) findViewById(R.id.textView8);
@@ -96,6 +94,12 @@ public class VcsSittiDailyIPTBB extends AppCompatActivity {
         textView10.setText("Emp No.: " + PersonalDetailsActivity.EmpID);
         TextView textView9 = (TextView) findViewById(R.id.textView9);
         textView9.setText("Location: " + MainActivity.latLong1);
+
+        TextView textViewDate = (TextView) findViewById(R.id.textViewDate);
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:yyyy HH:mm");
+        String strData = sdf.format(calendar.getTime());
+        textViewDate.setText(strData);
 
         Intent receivedIntent = getIntent();
         //now get the itemID we passed as an extra
@@ -187,7 +191,7 @@ public class VcsSittiDailyIPTBB extends AppCompatActivity {
         //canvas.drawText("Location: " + MainActivity.latLong1,1500,128,titlePaint);
         //canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.photo,210,270, false), 90, 755, paint);
         //--------------------------------Change as per your requirement------------------------------------------------------
-        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 470, 755, paint);
+        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 450, 750, paint);
         titlePaint.setTextSize(15);
 
         int[] editTextXPixel = {209,562,355,455,570,400,575,400,575,400,575,400,575,400,575,400,575,400,575,400,575,400,575,400,575,400,575,170};

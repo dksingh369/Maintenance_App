@@ -26,8 +26,8 @@ public class GpMakeModelActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-               // Intent intent = new Intent(getApplicationContext(), NavigationLlzNormarc7000Activity.class);
-                // startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), NavigationGpNormarc7000Activity.class);
+                startActivity(intent);
             }
         });
 
