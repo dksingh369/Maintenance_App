@@ -864,6 +864,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".5"
+                    android:textAlignment="center"
                     android:text="TOP"
                     android:textColor="@color/black" />
 
@@ -871,6 +872,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".5"
+                    android:textAlignment="center"
                     android:text="BOTTOM"
                     android:textColor="@color/black" />
 

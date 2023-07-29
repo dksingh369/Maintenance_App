@@ -50,7 +50,7 @@ public class SurAsmgcsMakeActivity extends AppCompatActivity {
         saab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),SurMssrIndraActivity.class);
+                Intent intent = new Intent(getApplicationContext(),AsmgcsSaabActivity.class);
                 startActivity(intent);
 
             }

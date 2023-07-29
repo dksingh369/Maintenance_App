@@ -169,6 +169,7 @@ public class AutomationIndraB2cMonthlyActivity extends AppCompatActivity {
 
         Bitmap bmp,scaledbmp;
 
+        //bmp = BitmapFactory.decodeResource(getResources(),R.drawable.automationindrab2cmonthly);
         bmp = BitmapFactory.decodeResource(getResources(),R.drawable.automationindrab2cmonthly);
         scaledbmp = Bitmap.createScaledBitmap(bmp,723,1024,false);
 

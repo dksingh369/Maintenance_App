@@ -594,6 +594,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".5"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="RX/TX-1"
                     android:textColor="@color/black" />
 
@@ -602,6 +603,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".5"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="RX/TX-2"
                     android:textColor="@color/black" />
 
@@ -1038,11 +1040,13 @@
                     android:fontFamily="sans-serif-black"
                     android:text="MODULATOR"
                     android:textColor="@color/black" />
+
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".25"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="A"
                     android:textColor="@color/black" />
                 <TextView
@@ -1050,6 +1054,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".25"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="B"
                     android:textColor="@color/black" />
                 <TextView
@@ -1057,6 +1062,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".25"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="A"
                     android:textColor="@color/black" />
                 <TextView
@@ -1064,6 +1070,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".25"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="B"
                     android:textColor="@color/black" />
 
@@ -1410,6 +1417,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".25"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="A"
                     android:textColor="@color/black" />
                 <TextView
@@ -1417,6 +1425,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".25"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="B"
                     android:textColor="@color/black" />
                 <TextView
@@ -1424,6 +1433,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".25"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="A"
                     android:textColor="@color/black" />
                 <TextView
@@ -1431,6 +1441,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".25"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="B"
                     android:textColor="@color/black" />
 
@@ -2964,6 +2975,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".5"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="TOP"
                     android:textColor="@color/black" />
 
@@ -2972,6 +2984,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight=".5"
                     android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
                     android:text="BOTTOM"
                     android:textColor="@color/black" />
 
@@ -3180,6 +3193,7 @@
                     android:layout_weight="1"
                     android:text=" Remarks/Action taken"
                     android:textColor="@color/purple_200"
+                    android:textAlignment="center"
                     android:textStyle="bold|italic" />
 
                 <EditText
