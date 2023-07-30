@@ -22,7 +22,7 @@ public class GAGAN extends AppCompatActivity {
     public void inmcc (View view){
 
 
-        Intent intent = new Intent(getApplicationContext(),DvorMopiensActivity.class);
+        Intent intent = new Intent(getApplicationContext(),GAGANINMCC.class);
         startActivity(intent);
 
 

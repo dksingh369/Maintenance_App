@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GAGAN">
+    tools:context=".GAGANINMCC">
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,7 +23,7 @@
             android:layout_columnSpan="2"
             android:layout_column="0"
             android:layout_height="wrap_content"
-            android:text="Select GAGAN schedules"
+            android:text="GAGAN INMCC Maintenance Schedules"
             android:textAlignment="center"
             android:textColor="@color/teal_700"
             android:textSize="22sp"
@@ -31,7 +31,7 @@
 
 
         <Button
-            android:id="@+id/inres"
+            android:id="@+id/daily"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
@@ -41,37 +41,69 @@
             android:layout_row="1"
             android:layout_margin="2dp"
             android:layout_column="0"
-            android:onClick="inres"
-            android:text="INRES" />
+            android:onClick="dailyClicked"
+            android:text="DAILY" />
+
+
 
         <Button
-            android:id="@+id/inmcc"
+            android:id="@+id/monthly"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:backgroundTint="@color/teal_700"
             android:layout_row="1"
             android:layout_column="1"
             android:layout_margin="2dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill"
-            android:onClick="inmcc"
-            android:text="INMCC" />
+            android:onClick="monthly"
+            android:layout_height="wrap_content"
+            android:text="MONTHLY" />
+
+
+
 
         <Button
-            android:id="@+id/inlus"
+            android:id="@+id/sixmonthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="2dp"
+            android:onClick="halfYearlyClicked"
+            android:backgroundTint="@color/teal_700"
+            android:text="SIX MONTHLY" />
+
+        <Button
+            android:id="@+id/premonsoon"
             android:layout_width="wrap_content"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:backgroundTint="@color/teal_700"
             android:layout_row="2"
-            android:layout_column="0"
+            android:layout_column="1"
             android:layout_margin="2dp"
-            android:layout_columnSpan="2"
-            android:onClick="inlus"
+            android:onClick="premonsoon"
             android:layout_height="wrap_content"
-            android:text="INLUS" />
+            android:text="Pre - Monsoon Check" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:text="© 2022-2023 Akshay Bele"
+            android:textAlignment="center"
+            android:textStyle="italic|bold"
+            android:textColor="@color/teal_700"
+            android:layout_columnSpan="2"
+            android:layout_column="0"
+            android:id="@+id/textView2" />
+
 
 
     </GridLayout>
