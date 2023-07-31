@@ -290,6 +290,7 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".3"
+                    android:textAlignment="center"
                     android:hint=" A/B/A+B"
                     android:textSize="14sp" />
 
@@ -298,6 +299,7 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".4"
+                    android:textAlignment="center"
                     android:hint=" ON/OFF"
                     android:textSize="14sp" />
                 <EditText
@@ -305,6 +307,7 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".25"
+                    android:textAlignment="center"
                     android:hint=" A"
                     android:textSize="14sp" />
                 <EditText
@@ -312,6 +315,7 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".25"
+                    android:textAlignment="center"
                     android:hint=" B"
                     android:textSize="14sp" />
                 <EditText
@@ -319,6 +323,7 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".4"
+                    android:textAlignment="center"
                     android:hint=" A/B"
                     android:textSize="14sp" />
                 <EditText
@@ -326,6 +331,7 @@
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".4"
+                    android:textAlignment="center"
                     android:hint=" A/B"
                     android:textSize="14sp" />
 

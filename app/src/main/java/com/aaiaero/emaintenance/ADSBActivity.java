@@ -37,10 +37,10 @@ public class ADSBActivity extends AppCompatActivity {
 
     }
 
-    public void dailyClicked (View view){
+   public void dailyClicked (View view){
         // Launch the VHF Equipment Room Activity
 
-        Intent intent = new Intent(getApplicationContext(),ADSBComsoftDailyActivity.class);
+        Intent intent = new Intent(getApplicationContext(), SurvADSBComsoftDailyActivity.class);
         startActivity(intent);
 
 
@@ -48,32 +48,32 @@ public class ADSBActivity extends AppCompatActivity {
 
     public void weeklyClicked (View view){
         // Launch the DVR Equipment Room Activity
-        Intent intent = new Intent(getApplicationContext(),ADSBDailyActivity.class);
-        startActivity(intent);
+
 
 
     }
 
-    public void fortnightlyClicked (View view){
+   /* public void fortnightlyClicked (View view){
         // Launch the DATISEquipment Room Activity
 
-
+        Intent intent = new Intent(getApplicationContext(),SurAdsbComsoftUpsMonthlyActivity.class);
+        startActivity(intent);
 
     }
 
     public void monthlyClicked (View view){
         // Launch the VCS Equipment Room Activity
 
-        Log.i("Monthly ", "Clicked");
-        //Intent intent = new Intent(getApplicationContext(),ADSBComsoftDailyActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(),SurAdsbComsoftMonthlyActivity.class);
+        startActivity(intent);
 
     }
 
     public void quaterlyClicked (View view){
         // Launch the RCAG Equipment Room Activity
 
-
+        Intent intent = new Intent(getApplicationContext(),SurAdsbComsoftQuarterlyActivity.class);
+        startActivity(intent);
 
     }
 
@@ -91,7 +91,7 @@ public class ADSBActivity extends AppCompatActivity {
 
 
 
-    }
+    }*/
 
     public void miscellaneousClicked (View view){
         // Launch the Others Equipment Room Activity

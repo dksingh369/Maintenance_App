@@ -81,7 +81,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:onClick="fortnightlyClicked"
-            android:text="fort&#10;nightly"
+            android:text="UPS Monthly"
             android:textSize="12sp" />
 
         <Button

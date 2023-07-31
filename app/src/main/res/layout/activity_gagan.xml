@@ -42,7 +42,7 @@
             android:layout_margin="2dp"
             android:layout_column="0"
             android:onClick="inres"
-            android:text="GAGAN INRES" />
+            android:text="INRES" />
 
         <Button
             android:id="@+id/inmcc"
