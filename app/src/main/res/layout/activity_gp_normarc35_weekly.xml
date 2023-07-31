@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GpNormarc35WeeklyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="Airports Authority of India"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/logoaai" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="CNS MANUAL VOL.VII Part 2"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Name: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Desig: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Emp No.: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Location: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <TextView
+                android:id="@+id/textViewGpNormarc35Weekly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="PREVENTIVE MAINTENANCE SCHEDULE- Weekly"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextGpNormarc35WeeklyStation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="0.9"
+                    android:ems="10"
+                    android:hint="Station"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editTextGpNormarc35WeeklyRegion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="0.9"
+                    android:ems="10"
+                    android:hint="Region "
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textViewDate1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="Date:"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/textViewColor" />
+
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/textViewColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textViewLGpNormarc35WeeklyEquip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textViewColor"
+                    android:text="Equipment: Glide Path" />
+                <TextView
+                    android:id="@+id/textViewGpNormarc35WeeklyMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/textViewColor"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Make: NORMARC " />
+                <EditText
+                    android:id="@+id/editTextGpNormarc35WeeklyModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:ems="10"
+                    android:hint="Model "
+                    android:layout_weight="0.9"
+                    android:textSize="14sp"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewGpNormarc35WeeklyParameter1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Glide Path FIELD MEASUREMENTS"
+                android:textColor="@color/teal_700"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyHeight1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Height in \nFeet"
+                        android:gravity="center"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx18"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx185"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="8.5"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx195"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="9.5"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx110"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx1105"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="10.5"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx111"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="11"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx112"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx1125"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="12.5"
+                        android:textColor="@color/textViewColor" />
+
+                    <EditText
+                        android:id="@+id/editTextGpNormarc35WeeklyObsTx1Height00"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="4"
+                        android:hint=""
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editTextGpNormarc35WeeklyObsTx1Height08U"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="4"
+                        android:hint=""
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editTextGpNormarc35WeeklyObsTx1Height08L"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="4"
+                        android:hint=""
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="TX-I"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyObsTx1DDM"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:text="DDM"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1DDM8"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1DDM85"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1DDM9"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1DDM95"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1DDM10"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1DDM105"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1DDM11"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1DDM12"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1DDM125"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyTx100"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="0.0"
+                                android:textColor="@color/textViewColor" />
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyTx108U"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="0.0875 \nUpper"
+                                android:textColor="@color/textViewColor" />
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyTx108L"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="0.0875 \nLower"
+                                android:textColor="@color/textViewColor" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyObsTx1SDM"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:text="SDM"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM8"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM85"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM9"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM95"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM10"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM105"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM11"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM12"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM125"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM00"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM08U"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1SDM08L"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyObsTx1RF"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:text="RF"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF8"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF85"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF9"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF95"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF10"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF105"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF11"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF12"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF125"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF00"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF08U"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx1RF08L"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyDeg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Height in \nFeet"
+                        android:gravity="center"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx28"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx285"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="8.5"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx29"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx295"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="9.5"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx210"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx2105"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="10.5"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx211"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="11"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx212"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx2125"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="12.5"
+                        android:textColor="@color/textViewColor" />
+
+                    <EditText
+                        android:id="@+id/editTextGpNormarc35WeeklyObsTx2Height00"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="4"
+                        android:hint=""
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editTextGpNormarc35WeeklyObsTx2Height08U"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="4"
+                        android:hint=""
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editTextGpNormarc35WeeklyObsTx2Height08L"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="4"
+                        android:hint=""
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewGpNormarc35WeeklyTx2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="TX-II"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyObsTx2DDM"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:text="DDM"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2DDM8"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2DDM85"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2DDM9"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2DDM95"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2DDM10"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2DDM105"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2DDM11"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2DDM12"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2DDM125"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyTx200"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="0.0"
+                                android:textColor="@color/textViewColor" />
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyTx208U"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="0.0875 \nUpper"
+                                android:textColor="@color/textViewColor" />
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyTx208L"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="0.0875 \nLower"
+                                android:textColor="@color/textViewColor" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyObsTx2SDM"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:text="SDM"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM8"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM85"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM9"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM95"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM10"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM105"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM11"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM12"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM125"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM00"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM08U"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2SDM08L"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewGpNormarc35WeeklyObsTx2RF"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:text="RF"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF8"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF85"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF9"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF95"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF10"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF105"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF11"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF12"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF125"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF00"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF08U"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/editTextGpNormarc35WeeklyObsTx2RF08L"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="4"
+                                android:hint=""
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/textViewGpNormarc35WeeklyNote1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Note: 1. The reading should be taken for operational transmitter only"
+                android:textColor="@color/teal_700" />
+            <TextView
+                android:id="@+id/textViewGpNormarc35WeeklyNote2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="2. Height, SDM and RF at 0 DDM and half GP sector width points (0.0875DDM) upper and (0.0875DDM) lower is to be entered in table"
+                android:textColor="@color/teal_700" />
+
+            <TextView
+                android:id="@+id/textViewGpNormarc35WeeklyNote3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="3. The readings are required to be compared with the readings taken after last flight inspection for taking corrective action if any."
+                android:textColor="@color/teal_700" />
+
+            <EditText
+                android:id="@+id/editTextGpNormarc35WeeklyRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="4"
+                android:hint="Remarks:"
+                android:inputType="textMultiLine"
+                android:textSize="14sp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/teal_700"
+                    android:gravity="center"
+                    android:text="Sign Document" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/teal_700"
+                    android:gravity="center"
+                    android:text="Submit Schedule" />
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:text="Form Created by- Shubham Jain"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/teal_700"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,8 +23,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
-        <!-- Akshay's Activities Starts -->
+ <!-- Akshay's Activities Starts -->
         <activity
             android:name=".DmeGcelActivity"
             android:exported="false" />
@@ -270,8 +269,7 @@
             android:exported="false" />
         <activity
             android:name=".NavAidsDVORGcel755DailyActivity"
-            android:exported="false" />
-        <!-- Akshay's Activities Ends -->
+            android:exported="false" /> <!-- Akshay's Activities Ends -->
         <!-- Naveen's Activities Starts -->
         <activity
             android:name=".VhfEcilTxRxActivity"
@@ -457,8 +455,45 @@
             android:name=".VHFDVRRetiaMonthlyActivity"
             android:exported="false" /> <!-- Naveen's Activities Ends -->
         <!-- Shubham's Activities Starts -->
-
-
+        <activity
+            android:name=".NavigationGpNormarc35Activity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationLlzNormarc35Activity"
+            android:exported="false" />
+        <activity
+            android:name=".GpNormarc35SixActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GpNormarc35QuarterlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GpNormarc35WeeklyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GpNormarc35DailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc35AnnualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc35SixActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc35QuarterlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc35MonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc35WeeklyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc35DfrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LlzNormarc35DailyActivity"
+            android:exported="false" />
         <activity
             android:name=".LlzAsiiQuarterly2Activity"
             android:exported="false" />
@@ -665,9 +700,7 @@
             android:exported="false" />
         <activity
             android:name=".NavigationGpNormarc7000Activity"
-            android:exported="false" />
-
-        <!-- Shubham's Activities Ends -->
+            android:exported="false" /> <!-- Shubham's Activities Ends -->
         <!-- Sunny's Activities Starts -->
         <activity
             android:name=".SurveilanceMssrIndraSixMonthlyActivity"
