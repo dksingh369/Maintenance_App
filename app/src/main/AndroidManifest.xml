@@ -23,7 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
- <!-- Akshay's Activities Starts -->
+
+
+        <!-- Akshay's Activities Starts -->
         <activity
             android:name=".DmeGcelActivity"
             android:exported="false" />
@@ -269,7 +271,12 @@
             android:exported="false" />
         <activity
             android:name=".NavAidsDVORGcel755DailyActivity"
-            android:exported="false" /> <!-- Akshay's Activities Ends -->
+            android:exported="false" />
+
+
+        <!-- Akshay's Activities Ends -->
+
+
         <!-- Naveen's Activities Starts -->
         <activity
             android:name=".VhfEcilTxRxActivity"
@@ -700,7 +707,11 @@
             android:exported="false" />
         <activity
             android:name=".NavigationGpNormarc7000Activity"
-            android:exported="false" /> <!-- Shubham's Activities Ends -->
+            android:exported="false" />
+
+
+        <!-- Shubham's Activities Ends -->
+
         <!-- Sunny's Activities Starts -->
         <activity
             android:name=".SurveilanceMssrIndraSixMonthlyActivity"

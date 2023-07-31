@@ -1,5 +1,8 @@
 package com.aaiaero.emaintenance;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -21,14 +24,10 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -38,8 +37,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-
-public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
+public class GAGANINRESMonthly extends AppCompatActivity {
 
     private MyFunctions myFunctions = new MyFunctions(this);//--1--//Add this
     private MySignature mySignature = new MySignature(this);
@@ -51,7 +49,7 @@ public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
 
     public  String Date;
 
-    private String thisActivityName = "NavAidsDVORThales432AnnualActivity"; //Change Here as per your class name
+    private String thisActivityName = "GAGANINRESMonthly"; //Change Here as per your class name
 
     public void click(View view) {
 
@@ -69,19 +67,16 @@ public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
         }
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nav_aids_dvorthales432_annual);
+        setContentView(R.layout.activity_gaganinresmonthly);
 
 
-        EditText editText1,editText2,editText3,editText4,editText5,editText6,editText7,editText8,editText9,editText10,editText11,editText12,
-                editText13,editText14,editText15,editText16,editText17,editText18,editText19,editText20,editText21,editText22,editText23,editText24,
-                editText25,editText26,editText27,editText28,editText29,editText30;
+        EditText editText1,editText2,editText3,editText4,editText5,editText6,editText7,editText8,editText9,editText10,
+                editText11,editText12;
 
-
-        editTextArray = new EditText[]{
+        editTextArray =  new EditText[] {
                 editText1 = (EditText) findViewById(R.id.editText1),
                 editText2 = (EditText) findViewById(R.id.editText2),
                 editText3 = (EditText) findViewById(R.id.editText3),
@@ -93,26 +88,7 @@ public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
                 editText9 = (EditText) findViewById(R.id.editText9),
                 editText10 = (EditText) findViewById(R.id.editText10),
                 editText11 = (EditText) findViewById(R.id.editText11),
-                editText12 = (EditText) findViewById(R.id.editText12),
-                editText13 = (EditText) findViewById(R.id.editText13),
-                editText14 = (EditText) findViewById(R.id.editText14),
-                editText15 = (EditText) findViewById(R.id.editText15),
-                editText16 = (EditText) findViewById(R.id.editText16),
-                editText17 = (EditText) findViewById(R.id.editText17),
-                editText18 = (EditText) findViewById(R.id.editText18),
-                editText19 = (EditText) findViewById(R.id.editText19),
-                editText20 = (EditText) findViewById(R.id.editText20),
-                editText21 = (EditText) findViewById(R.id.editText21),
-                editText22 = (EditText) findViewById(R.id.editText22),
-                editText23 = (EditText) findViewById(R.id.editText23),
-                editText24 = (EditText) findViewById(R.id.editText24),
-                editText25 = (EditText) findViewById(R.id.editText25),
-                editText26 = (EditText) findViewById(R.id.editText26),
-                editText27 = (EditText) findViewById(R.id.editText27),
-                editText28 = (EditText) findViewById(R.id.editText28),
-                editText29 = (EditText) findViewById(R.id.editText29),
-                editText30 = (EditText) findViewById(R.id.editText30)};
-
+                editText12 = (EditText) findViewById(R.id.editText12)};
 
 
         TextView textViewN = (TextView) findViewById(R.id.textViewN);
@@ -123,13 +99,11 @@ public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
         textViewE.setText("Emp No.: " + PersonalDetailsActivity.EmpID);
         TextView textViewL = (TextView) findViewById(R.id.textViewL);
         textViewL.setText("Location: " + MainActivity.latLong1);
-
         TextView textView = (TextView) findViewById(R.id.textViewDate);
 
         SimpleDateFormat date1 = new SimpleDateFormat("dd.MM.yyyy, HH:mm");
         Date = date1.format(new Date());
         textView.setText(Date);
-
 
         Intent receivedIntent = getIntent();
         //now get the itemID we passed as an extra
@@ -182,7 +156,6 @@ public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
         });
     }
 
-
     private void generatePDF() {
 
         // Fixed for all activity-------------------------------------------------------------------
@@ -191,14 +164,13 @@ public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
 
         String[] editTextDataForPDF = myFunctions.seperateEditText(outputEditText);
 
-        String outputSwitch = myFunctions.getSwitchStatusForPDF(switchArray);
+        //String outputSwitch = myFunctions.getSwitchStatusForPDF(switchArray);
 
-        String[] switchDataForPDF = myFunctions.seperateSwitchData(outputSwitch);
+        //  String[] switchDataForPDF = myFunctions.seperateSwitchData(outputSwitch);
 
-        //  String outputEditText2 = myFunctions.getEditTextDataForPDF(editTextArray2);
+        //  String outputSpinner = myFunctions.getSpinnerStatusForPDF(spinnerArray);
 
-        //String[] editTextDataForPDF2 = myFunctions.seperateEditText(outputEditText2);
-
+        //String[] spinnerDataForPDF = myFunctions.seperateSpinnerData(outputSpinner);
 
         PdfDocument myPdfdocument = new PdfDocument();
 
@@ -209,7 +181,6 @@ public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
         // crate a page description
         PdfDocument.PageInfo myPageInfo1 = new PdfDocument.PageInfo.Builder(1384,1792, 1).create();
 
-
         // start a page
         PdfDocument.Page myPage1 = myPdfdocument.startPage(myPageInfo1);
         Canvas canvas = myPage1.getCanvas();
@@ -217,66 +188,109 @@ public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
 
         Bitmap bmp, scaledbmp;
 
-        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.dvorthales432annual);
-        scaledbmp = Bitmap.createScaledBitmap(bmp, 1384,1792, false);
 
+//--------------------------------------------------------------------------------------------
+        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gaganinresmonthly1);
+        scaledbmp = Bitmap.createScaledBitmap(bmp, 1384,1792, false);
+//--------------------------------------------------------------------------------------------
         canvas.drawBitmap(scaledbmp, 0, 0, paint);
 
-        titlePaint.setTextSize(20);  //Change here
-        paint.setTextAlign(Paint.Align.LEFT);
-        //canvas.drawText(PersonalDetails.name ,1900,2435,titlePaint);
-        //canvas.drawText(PersonalDetails.designation ,1900,2480,titlePaint);
-        //canvas.drawText(PersonalDetails.EmpID ,1900,2365,titlePaint);
-        //canvas.drawText("Emp. No." ,1752,2365,titlePaint);
-        // canvas.drawText("Location: " + MainActivity.latitude + " , " + MainActivity.longitude, 385, 238, titlePaint);
-        // canvas.drawBitmap(PersonalDetailsActivity.photo, 490, 10, paint);
 
         titlePaint.setTextSize(20);
+        paint.setTextAlign(Paint.Align.LEFT);
+        //canvas.drawText("Name: " + PersonalDetailsActivity.naam ,1500,32,titlePaint);
+        //canvas.drawText("Desig: " + PersonalDetailsActivity.design ,1500,64,titlePaint);
+        //canvas.drawText("Emp No.: " + PersonalDetailsActivity.EmpID ,1500,96,titlePaint);
+        //canvas.drawText("Location: " + MainActivity.latLong1,1500,128,titlePaint);
+        //canvas.drawBitmap(PersonalDetailsActivity.photo, 540, 21, paint);
+        //canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.photo,125,150, false), 540, 15, paint);
+        //--------------------------------Change as per your requirement------------------------------------------------------
 
-        int[] editTextXPixel1 = {277,313,763,715,715,715,715,715,715,715,715,715,715,715,715,715,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,175};
-        int[] editTextYPixel1 = {253,283,283,429,465,493,537,579,629,687,757,817,875,941,996,1063,429,465,493,537,579,629,687,757,817,875,941,996,1063,1193};
+        //canvas.drawBitmap(PersonalDetailsActivity.sigNature, 1325, 2720, paint);
+        titlePaint.setTextSize(20);
+
+        int[] editTextXPixel1 = {247,975,975,975,975,975,975,975,975,975,208};
+        int[] editTextYPixel1 = {213,409,482,555,628,702,775,852,920,995,1135};
 
 
 
+
+        // Change till here as per requirements ----------------------------------------------------
+
+        //Fixed for all activity--------------------------------------------------------------------
 
         for (int i = 0; i < editTextXPixel1.length; i++) {
             canvas.drawText(editTextDataForPDF[i], editTextXPixel1[i], editTextYPixel1[i], titlePaint);
         }
 
 
+
+
         Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy_HHmm");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd_MM_yyyy_HH_mm");
+        SimpleDateFormat sdf1 = new SimpleDateFormat("dd.MM.yyyy");
+        SimpleDateFormat sdf2 = new SimpleDateFormat("HH:mm");
         String strData = sdf.format(calendar.getTime());
+        String strData1 = sdf1.format(calendar.getTime());
+        String strData2 = sdf2.format(calendar.getTime());
         // Fixed till here--------------------------------------------------------------------------
 
         // Change as per your requirement-----------------------------------------------------------
         titlePaint.setTextSize(20);
 
-        canvas.drawText(Date, 1025,275, titlePaint);
-
-        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,260,290, false), 661,1320, paint);
-
-
-        // canvas.drawText(strData,1705,577,titlePaint);//Printing Date on PDF
+        canvas.drawText(strData1,1128,208 , titlePaint);//Printing Date on PDF
+        canvas.drawText(strData2, 1128,240, titlePaint);//Printing Date on PDF
 
         myPdfdocument.finishPage(myPage1);
 
 
-        //---------------------End of Page 1---------------
+        PdfDocument.PageInfo myPageInfo2 = new PdfDocument.PageInfo.Builder(1384,1792, 2).create();
+
+        // start a page
+        PdfDocument.Page myPage2 = myPdfdocument.startPage(myPageInfo2);
+
+        canvas = myPage2.getCanvas();
+        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.gaganinresmonthly2);
+        scaledbmp = Bitmap.createScaledBitmap(bmp, 1384,1792, false);
+        canvas.drawBitmap(scaledbmp, 0, 0, paint);
+
+        titlePaint.setTextSize(20);  //Change here
+        paint.setTextAlign(Paint.Align.LEFT);
+
+        int[] editTextXPixel2 = {204};
+        int[] editTextYPixel2 = {218};
+
+
+
+
+        // Change till here as per requirements ----------------------------------------------------
+
+        //Fixed for all activity--------------------------------------------------------------------
+
+        for (int i = 0; i < editTextXPixel2.length; i++) {
+            canvas.drawText(editTextDataForPDF[i + editTextXPixel1.length], editTextXPixel2[i], editTextYPixel2[i], titlePaint);
+        }
+
+
+
+
+        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,400,410, false), 824,682, paint);
+        myPdfdocument.finishPage(myPage2);
 
 
         ActivityCompat.requestPermissions(this, new String[]{
 
                 Manifest.permission.WRITE_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
 
-
-        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Nav - Aids/DVOR/THALES - 432/Annual/";// Change Here------------------
+        //----------------------Change-----------------------------------------------------------------------------
+        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Nav - Aids/GAGAN/INRES/Monthly/";// Change Here------------------
         File file = new File(directory_path);
         if (!file.exists()) {
             file.mkdirs();
         }
-
-        String fileName = "DVOR_Thales_432_Annual" + strData + ".pdf"; // Change Here--------------------------
+        //String targetPdf = directory_path + "test.pdf";
+        //String fileName = "Monthly ADSB " + dateFormat.format(dateObj) + ".pdf";
+        String fileName = "Gagan_INRES_Monthly" + strData + ".pdf"; // Change Here--------------------------
         String targetPdf = directory_path + fileName;
         File filePath = new File(targetPdf);
         try {
@@ -291,28 +305,24 @@ public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
         String specificCode = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());// Change Here----------------------------
         //This function saves all the data to parse Server
         //myFunctions.saveToParse(String targetPdf, String fileName, String Equipment,String Schedule_Type,String EditTextData)
-        myFunctions.saveToParse(targetPdf, fileName, "DVOR", "Yearly", outputEditText, MyFunctions.specificCode("y"), "outputSwitch", "outputSpinner");// C// Change Here-----------------------
 
+        myFunctions.saveToParse(targetPdf, fileName, "GAGAN", "Monthly", outputEditText, MyFunctions.specificCode("m"),"outputSwitch", "outputSpinner");// Change Here-----------------------
 
         // This function will send eMail using JavaMailAPI
+        //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)
+
 
         myFunctions.sendEmail(PersonalDetailsActivity.emailTo + "@aai.aero",
-                "Annual Maintenance of DVOR Thales 432 done.",//Change Here-----------------------------
+                "Monthly Maintenance of Gagan INRES done.",//Change Here-----------------------------
                 "Maintenance Schedule is attached. Please verify.", targetPdf, fileName);
         //---------------------------------------------------------------------------------------------------------
 
 
-
         myFunctions.toLogoutActivity();
-
-
     }
 
-
-
-    //Copy this function in your activity completely without any change
     @Override
-    public boolean onCreateOptionsMenu (Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.sub_menu, menu);
         return super.onCreateOptionsMenu(menu);
@@ -320,7 +330,7 @@ public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
 
     //Copy this function in your activity completely without any change
     @Override
-    public boolean onOptionsItemSelected (MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item) {
         super.onOptionsItemSelected(item);
 
         switch (item.getItemId()) {
@@ -382,8 +392,11 @@ public class NavAidsDVORThales432AnnualActivity extends AppCompatActivity {
             default:
                 return false;
         }
+
     }
-
-    // Fixed for all activity-------------------------------------------------------------------
-
 }
+
+// Fixed for all activity-------------------------------------------------------------------
+
+
+
