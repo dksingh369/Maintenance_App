@@ -1,0 +1,1986 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GaganInlusWestMonthlyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="Airports Authority of India"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/logoaai" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="CNS MANUAL VOL.VII Part 2"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Name: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Desig: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:id="@+id/textView118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Emp No.: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Location: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <TextView
+                android:id="@+id/textViewInlusWestMonthly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="PREVENTIVE MAINTENANCE SCHEDULE- MONTHLY (INLUS WEST)"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/textViewLInlusWestMonthlySite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/textViewColor"
+                    android:text="Site: Bengaluru" />
+
+                <TextView
+                    android:id="@+id/textViewDate1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1.4"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/textViewColor"
+                    android:text="Date:" />
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/textViewColor"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textViewInlusWestMonthlyFac"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textColor="@color/textViewColor"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="Facility: Gagan INLUS- West (GBL)" />
+                <EditText
+                    android:id="@+id/editTextInlusWestMonthlyTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:hint="Time (UTC)"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:textColor="@color/teal_700"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="1.0"
+                        android:layout_weight="0.2"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="1"/>
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="2" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="3" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="4" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="5" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="6" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="7" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="83dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="8" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo19"
+                        android:layout_width="match_parent"
+                        android:layout_height="237dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="9" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="237dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="10" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="237dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="11" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="237dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="12" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="237dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="13" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="237dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="14" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="78dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="15" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="16" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="17" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySNo30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="18" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyPara1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:text="Activity/Observation" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyInspect"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Visual inspect, exposed section of both RF &amp; DC cable, for any sign of damage" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyCableClose"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Ensure closure of all cable entry and exit points" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyCleanBlower"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Clean Blower filters" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyCleanPCU"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Clean PCU filters (front and rear)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyCleanKHPA"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Clean KHPA filters" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyGrass"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Inspect for wild growth near earth pits &amp; Antenna" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyGround"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Ensure all LRUs connected to ground" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyEN"
+                        android:layout_width="match_parent"
+                        android:layout_height="83dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Check E-N voltage for all DBs" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyT3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="C5-L5 Test Loop Translator (TLT)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC5L5RF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) RF" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC5L5Att"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Attenuation" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC5L5Band"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="c) Band" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC5L5Freq"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="d) Freq Reference" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyT4"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="C1-L1 Test Loop Translator (TLT)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC1L1RF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) RF" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC1L1Att"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Attenuation" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC1L1Band"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="c) Band" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC1L1Freq"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="d) Freq Reference" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyT5"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="C5 UP Converter" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC5UPRF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) RF" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC5UPAtt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Attenuation" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC5UPIF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="c) IF" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC5UPFreq"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="d) Freq Reference" />
+
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyT6"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="C1 UP Converter" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC1UPRF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) RF" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC1UPAtt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Attenuation" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC1UPIF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="c) IF" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyC1UPFreq"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="d) Freq Reference" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyT7"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="L1 LNA Controller" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyL1VoltLNA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) LNA-1 DC Voltage Monitor" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyL1VoltLNA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) LNA-2 DC Voltage Monitor" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyL1CurLNA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="c) LNA-1 Current Monitor" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyL1CurLNA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="d) LNA-2 Current Monitor" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyT8"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="L5 LNA Controller" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyL5VoltLNA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) LNA-1 DC Voltage Monitor" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyL5VoltLNA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) LNA-2 DC Voltage Monitor" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyL5CurLNA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="c) LNA-1 Current Monitor" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyL5CurLNA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="d) LNA-2 Current Monitor" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyT9"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="C LNA Controller" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyStatusPS"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Status of PS-1 &amp; PS2" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyT10"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="PCU Battery bank operation check" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyPCUBBoff"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Switch off both the MCBs catering to PCU for less than a min &amp; check the operation of PCU on Battery bank" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyL1Ops"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Switch ON both the MCBs catering to PCU &amp; check the operation of PCU" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySpares"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Monthly preventive maintenance of Spares KHPA" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyT12"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="Phase Noise Enhancer (PNE)" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyT13"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="[Below readings are applicable only if PNE is present otherwise NA]" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyVoltageControl"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Monitor control voltage counter reading of PNE" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyT14"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Record the following control voltage by rotating the thumbwheel switch" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthly1"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="Thumbwheel Position" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyTW1"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="1" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyTW2"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="2" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyTW3"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="3" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyTW4"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="4" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyTW5"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="5" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyTW6"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="6" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyTW7"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="7" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyTW8"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="8" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthly2"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="Parameter" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyOven"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="Oven" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlySupply"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="Supply" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyControl"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="Control" />
+
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyCharge"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="Charge" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyBattery"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="Battery" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyINTEG"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="INTEG" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyDAC"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="DAC" />
+
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyDET"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/textViewColor"
+                                android:text="DET" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlySWPos6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="c) Put the thumbwheel switch at position 6" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1.3"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTolerance"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Expected \n(Status/Value)"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="No Damages" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Close" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Clean" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Clean" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Clean" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="No wild growth" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol7"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Connected" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol8"
+                        android:layout_width="match_parent"
+                        android:layout_height="83dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="&lt; 2 volts" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="6676.45 MHz" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol12"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="10 dB" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Band: 2" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="2048 Ref:Ext" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol15"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="6715.42 MHz" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol16"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="10 dB" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Band: 1" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol18"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="2048 Ref:Ext" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="6676.45 MHz" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol20"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="20 dB" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol21"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="70 MHz" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="2048 Ref:Ext" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol23"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="6715.42 MHz" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol24"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="20 dB" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol25"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="70 MHz" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol26"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="2048 Ref:Ext" />
+
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol27"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="5-6V/22.5-26.5V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol28"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="5-6V/22.5-26.5V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol29"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="182mA - 273mA" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol30"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="203mA - 305mA" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="3-6V/22.5-26.5V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol32"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="3-6V/22.5-26.5V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol33"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="173mA - 261mA" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol34"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="186mA - 278mA" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol35"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="26 V &amp; 26V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol36"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="PCU works normal on Battery bank" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol37"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="PCU works normal" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol38"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Maintenance complete" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol39"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="80dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Note 5 digit value" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol40"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="Expected Value" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol41"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="3.3V to 3.7V" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol42"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="2.2V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol43"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1V to 4V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol44"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="0V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol45"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="0V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol46"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="0V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol47"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.3V to 3.7V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol48"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="0V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyTol49"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Done" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthlyMeasured1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:text="Observed (Status/Value)"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyInspect"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="No damages"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyCableClose"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Close"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyCleanBlower"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Clean"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyCleanPCU"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Clean"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyCleanKHPA"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Clean"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyGrass"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="No"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyGround"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Yes"
+                        android:textSize="14sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyDB1"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="SG DB-1" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestMonthlyDB1EN"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint=""
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyDB2"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="SG DB-2" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestMonthlyDB2EN"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint=""
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyDB3"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="RF DB-3" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestMonthlyDB3EN"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint=""
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyDB4"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="RF DB-4" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestMonthlyDB4EN"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint=""
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC5L5RF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="6676.45 MHz"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC5L5Att"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="10 dB"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC5L5Band"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Band: 2"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC5L5Freq"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="2048 Ref: Ext"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC1L1RF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="6715.42 MHz"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC1L1Att"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="10 dB"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC1L1Band"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Band: 1"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC1L1Freq"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="2048 Ref: Ext"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC5UPRF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="6676.45 MHz"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC5UPAtt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="20 dB"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC5UPIF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="70 MHz"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC5UPFreq"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="2048 Ref: Ext"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC1UPRF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="6715.42 MHz"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC1UPAtt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="20 dB"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC1UPIF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="70 MHz"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyC1UPFreq"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="2048 Ref: Ext"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyL1VoltLNA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Volts"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyL1VoltLNA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Volts"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyL1CurLNA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="mA"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyL1CurLNA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="mA"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyL5VoltLNA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Volts"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyL5VoltLNA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Volts"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyL5CurLNA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="mA"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyL5CurLNA2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="mA"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyCVoltLNA1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Volts"
+                        android:textSize="14sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyPCU1"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="PCU-A" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestMonthlyPCU1Off"
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nml"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestMonthlyPCU1ON"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nml"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyPCU2"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="PCU-B" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestMonthlyPCU2Off"
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nml"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestMonthlyPCU2ON"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nml"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestMonthlyPCU3"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="PCU-C" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestMonthlyPCU3Off"
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nml"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestMonthlyPCU3ON"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nml"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlySpares"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Yes"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyVoltageControl"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="80dp"
+                        android:ems="6"
+                        android:hint=""
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:id="@+id/textViewInlusWestMonthly3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="Measured Value" />
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyOven"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="3.3V to 3.7V"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlySupply"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="2.2V"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyControl"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="1V to 4V"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyCharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="0V"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyBattery"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="0V"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyINTEG"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="0V"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyDAC"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="1.3V to 3.7V"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyDET"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="0V"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestMonthlyTWPos6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Done"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextInlusWestMonthlyRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:ems="4"
+                android:hint="Remarks:"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Sign Document" />
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Submit Schedule" />
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:textStyle="italic"
+                android:textColor="@color/teal_700"
+                android:text="Form Created by- Shubham Jain"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

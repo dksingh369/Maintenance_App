@@ -23,11 +23,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-
-
-      <!-- Akshay's Activities Starts -->
-
-
+   <!-- Akshay's Activities Starts -->
         <activity
             android:name=".GAGANINMCC"
             android:exported="false" />
@@ -309,12 +305,7 @@
             android:exported="false" />
         <activity
             android:name=".NavAidsDVORGcel755DailyActivity"
-            android:exported="false" />
-
-
-        <!-- Akshay's Activities Ends -->
-
-
+            android:exported="false" /> <!-- Akshay's Activities Ends -->
         <!-- Naveen's Activities Starts -->
         <activity
             android:name=".VhfEcilTxRxActivity"
@@ -500,6 +491,48 @@
             android:name=".VHFDVRRetiaMonthlyActivity"
             android:exported="false" /> <!-- Naveen's Activities Ends -->
         <!-- Shubham's Activities Starts -->
+        <activity
+            android:name=".GaganInlusEastPreMonsoonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusEastSixMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusEastQuarterlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusEastMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusEastWeeklyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusEastDailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusWestPreMonsoonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusWestQuarterlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusWestSixMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusWestMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusWestWeeklyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusWestDailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusEastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GaganInlusWestActivity"
+            android:exported="false" />
         <activity
             android:name=".NavigationGpNormarc35Activity"
             android:exported="false" />
@@ -745,34 +778,26 @@
             android:exported="false" />
         <activity
             android:name=".NavigationGpNormarc7000Activity"
-            android:exported="false" />
-
-
-        <!-- Shubham's Activities Ends -->
-
+            android:exported="false" /> <!-- Shubham's Activities Ends -->
         <!-- Sunny's Activities Starts -->
-
-
-      <activity
-          android:name=".AsmgcsSaabWeeklyActivity"
-          android:exported="false" />
-      <activity
-          android:name=".AsmgcsSaabMonthlyActivity"
-          android:exported="false" />
-      <activity
-          android:name=".AsmgcsSaabDailyActivity"
-          android:exported="false" />
-
-      <activity
-          android:name=".AsmgcsSaabActivity"
-          android:exported="false" />
-      <activity
-          android:name=".AsmgcsSaabYearlyActivity"
-          android:exported="false" />
-      <activity
-          android:name=".AsmgcsSaabSixMonthlyActivity"
-          android:exported="false" />
-
+        <activity
+            android:name=".AsmgcsSaabWeeklyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsmgcsSaabMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsmgcsSaabDailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsmgcsSaabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsmgcsSaabYearlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsmgcsSaabSixMonthlyActivity"
+            android:exported="false" />
         <activity
             android:name=".SurveilanceMssrIndraSixMonthlyActivity"
             android:exported="false" />
@@ -909,10 +934,9 @@
             android:name=".DvorMopiensActivity"
             android:exported="false" /> <!-- Vipin's Activities Ends -->
         <!-- Deepak's Activities Starts -->
-
-      <activity
-          android:name=".SurvADSBComsoftDailyActivity"
-          android:exported="false" />
+        <activity
+            android:name=".SurvADSBComsoftDailyActivity"
+            android:exported="false" />
         <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
@@ -931,7 +955,6 @@
         <activity
             android:name=".ListDataActivity"
             android:exported="false" />
-
         <activity
             android:name=".LogOutActivity"
             android:exported="false" />
@@ -981,11 +1004,7 @@
             android:name=".CaptureAct"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-
-      <!-- Deepak's Activities Ends -->
-
-
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- Deepak's Activities Ends -->
         <!-- Karthik's Activities Starts -->
         <activity
             android:name=".SurMssrNgoscoDailyActivity"
