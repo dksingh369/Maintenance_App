@@ -34,7 +34,8 @@ public class GpMakeModelActivity extends AppCompatActivity {
         normarc35.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getApplicationContext(), NavigationGpNormarc35Activity.class);
+                startActivity(intent);
             }
         });
 
