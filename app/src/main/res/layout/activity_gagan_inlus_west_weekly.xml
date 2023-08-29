@@ -1,0 +1,1993 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GaganInlusWestWeeklyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="Airports Authority of India"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/logoaai" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="CNS MANUAL VOL.VII Part 2"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Name: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Desig: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:id="@+id/textView118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Emp No.: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:text="Location: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <TextView
+                android:id="@+id/textViewInlusWestWeekly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="PREVENTIVE MAINTENANCE SCHEDULE- WEEKLY (INLUS WEST)"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/textViewLInlusWestWeeklySite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/textViewColor"
+                    android:text="Site: Bengaluru" />
+
+                <TextView
+                    android:id="@+id/textViewDate1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1.4"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/textViewColor"
+                    android:text="Date:" />
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1.2"
+                    android:textColor="@color/textViewColor"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/textViewInlusWestWeeklyFac"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textColor="@color/textViewColor"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="Facility: Gagan INLUS- West (GBL)" />
+                <EditText
+                    android:id="@+id/editTextInlusWestWeeklyTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:hint="Time (UTC)"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:textColor="@color/teal_700"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:text="1.0"
+                        android:layout_weight="0.2"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1"/>
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="131dp"
+                        android:layout_marginTop="45dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="2" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="290dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="3" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="129dp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="4" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="235dp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="5" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="141dp"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="6" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="131dp"
+                        android:layout_marginTop="45dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="7" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="131dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="8" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo19"
+                        android:layout_width="match_parent"
+                        android:layout_height="131dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="9" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="129dp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="10" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="129dp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="11" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="129dp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="12" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="500dp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="13" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="495dp"
+                        android:layout_marginTop="17dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="14" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklySNo25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="124dp"
+                        android:layout_marginTop="17dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textViewColor"
+                        android:text="15" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyPara1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:text="Parameter" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyClean"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="General Cleanliness" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:text="INLUS SGS" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="Blower" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyPowerSW"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Power Switch" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyWorkStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Working Status" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="PCU" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyAlarmSW"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Alarm Enable Switch" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTempSW"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Over Temperature Switch" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyBattLED"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="c) Status of 'Battery LED'" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyFanFail"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="d) Status of 'Fan Fail'" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyAlarmLED"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="e) Status of Alarm LED " />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT4"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="INLUS Processor (IP)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyExhaust"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Power supply exhaust fans \n    status on the rear of IP" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyErrorMsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Error message in Front panel display" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT5"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="KWM GP summary status window-F1" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyLUSInt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) LUS Interference" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyC1Tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) C1 Tx Power (EIRP)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyC5Tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="c) C5 Tx Power (EIRP)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyRam"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="d) Processor Ram Utilization" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="Phase Noise Enhancer (PNE)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyDCVolt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) DC Volts (Meter reading)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyControlVolt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Control Voltage" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT21"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:textStyle="bold"
+                        android:text="INLUS RFU" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT7"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="GPS Clock" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyGPSStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Status" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyGPSTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Time" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT8"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="Antenna Control Unit (ACU)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyACUTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Time" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklykSolUse"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Solution in Use" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT9"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="Tracking Rx" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyLockStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Lock Status" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyRxFreq"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Rx Frequency (MHz)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT10"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="L1 LNA Controller" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyStatusL1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Status of LNA L1" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyL1Ops"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) LNA in Operation" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT11"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="L5 LNA Controller" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyStatusL5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Status of LNA L5" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyL5Ops"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) LNA in Operation" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT12"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="C LNA Controller" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyStatusC"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Status of LNA C" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyCOps"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) LNA in Operation" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT13"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="KHPA 1" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyBlowerOps1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Blower Operation" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyHVolt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Heater Voltage (Volts)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyHCur1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="c) Heater Current (Amp)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyBeamVolt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="d) Beam Voltage (KV)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyBeamCur1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="e) Beam Current (Amp) " />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyBodyCur1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="f) Body Current (mA)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyAtt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="g) Attenuation (dB)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyRefPower1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="h) Reflected power" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyDiffTemp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="i) Differential Temperature" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT14"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="KHPA 2" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyBlowerOps2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) Blower Operation" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyHVolt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) Heater Voltage (Volts)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyHCur2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="c) Heater Current (Amp)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyBeamVolt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="d) Beam Voltage (KV)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyBeamCur2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="e) Beam Current (Amp) " />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyBodyCur2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="f) Body Current (mA)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyAtt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="g) Attenuation (dB)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyRefPower2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="h) Reflected power" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyDiffTemp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="i) Differential Temperature" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyT15"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:textStyle="bold"
+                        android:text="M&amp;C" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyMCServer"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="a) M&amp;C Server Status" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyMCMon"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="b) M&amp;C Local monitor status" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1.3"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTolerance"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/teal_700"
+                        android:text="Expected \n(Status/Value)"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Clean and Dust free" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="75dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Illuminated (ON)" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol3"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Air flow normal" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="ON Position" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol5"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OFF Position" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol6"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="5 LEDs Green" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol7"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="OFF" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol8"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Nil" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol9"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Normal" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol10"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Nil" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol11"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Absent" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol12"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="74.6 ± 0.7 dBW" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol13"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="74.6 ± 0.7 dBW" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol14"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="25-55%" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeekly1"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="If PNE present" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeeklyTol15"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/textViewColor"
+                                android:text="0 Volts" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeeklyTol16"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/textViewColor"
+                                android:text="5 Volts" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeekly2"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="If PNE not present " />
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeeklyTol15B"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/textViewColor"
+                                android:text="Not Applicable" />
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeeklyTol16B"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/textViewColor"
+                                android:text="Not Applicable" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="75dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Locked" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol18"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Day:HH:MM" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol19"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="HH:MM" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol20"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="ST or LT 2b/mb" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol21"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Lock" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol22"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="4195.786 MHz" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol23"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Normal" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol24"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="LNA1/LNA2" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol25"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Normal" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol26"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="LNA1/LNA2" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol27"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Normal" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol28"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="LNA1/LNA2" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol29"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Normal" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol30"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="5.6V ± 0.05V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol31"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="5.9 ± 0.3A" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol32"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="8.55KV-9.25KV" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol33"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.00A to 1.40A" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol34"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="0-30 mA" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol35"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="&gt;1dB" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol36"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="&lt;10% of Tx Power" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol37"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="&lt;60°C" />
+
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol38"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Normal" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol39"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="5.6V ± 0.05V" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol40"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="5.9 ± 0.3A" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol41"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="8.55KV-9.25KV" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol42"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="1.00A to 1.40A" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol43"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="0-30 mA" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol44"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="&gt;1dB" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol45"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="&lt;10% of Tx Power" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol46"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="&lt;60°C" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol47"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Normal" />
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyTol48"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/textViewColor"
+                        android:text="Normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textViewInlusWestWeeklyMeasured1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/teal_700"
+                        android:text="Observed (Status/Value)"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyClean"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Dust Free"
+                        android:textSize="14sp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="35dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeeklyRack1"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="Rack-1" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyR1PS"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="ON"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyR1WorkStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nml"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeeklyRack2"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="Rack-2" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyR2PS"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="ON"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyR2WorkStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nml"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeeklyRack3"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="Rack-1" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyR3PS"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="ON"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyR3WorkStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nml"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeeklyPCU1"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="PCU-A" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP1AlarmSW"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="ON"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP1TempSW"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="OFF"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP1BattLED"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="OK"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP1FanFail"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="OFF"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP1AlarmLED"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nil"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeeklyPCU2"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="PCU-B" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP2AlarmSW"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="ON"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP2TempSW"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="OFF"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP2BattLED"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="OK"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP2FanFail"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="OFF"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP2AlarmLED"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nil"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textViewInlusWestWeeklyPCU3"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/textViewColor"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:text="PCU-C" />
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP3AlarmSW"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="ON"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP3TempSW"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="OFF"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP3BattLED"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="OK"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP3FanFail"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="OFF"
+                                android:textSize="14sp"/>
+                            <EditText
+                                android:id="@+id/editTextInlusWestWeeklyP3AlarmLED"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="5dp"
+                                android:ems="6"
+                                android:hint="Nil"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyExhaust"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Nml"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyErrorMsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Nil"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyLUSInt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Absent"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyC1Tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="74.6 ± 0.7 dBW"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyC5Tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="74.6 ± 0.7 dBW"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyRam"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="25-55%"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyDCVolt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="50dp"
+                        android:ems="6"
+                        android:hint=""
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyControlVolt"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint=""
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyGPSStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="75dp"
+                        android:ems="6"
+                        android:hint="Locked"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyGPSTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint=""
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyACUTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint=""
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklySolUse"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint=""
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyLockStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Lock"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyRxFreq"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="MHz"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyL1Status"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Nml"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyL1Ops"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="LNA1/LNA2"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyL2Status"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Nml"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyL2Ops"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="LNA1/LNA2"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyCStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Nml"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyCOps"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="LNA1/LNA2"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyBlower1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Nml"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyHVolt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Volts"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyHCur1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Amp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyBeamVolt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="KV"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyBeamCur1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Amp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyBodyCur1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="mA"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyAtt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="dB"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyRefPower1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Watt"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyDiffTemp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint=""
+                        android:textSize="14sp"/>
+
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyBlower2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Nml"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyHVolt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Volts"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyHCur2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Amp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyBeamVolt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="KV"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyBeamCur2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Amp"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyBodyCur2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="mA"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyAtt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="dB"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyRefPower2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Watt"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyDiffTemp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint=""
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyMCStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="40dp"
+                        android:ems="6"
+                        android:hint="Nml"
+                        android:textSize="14sp"/>
+                    <EditText
+                        android:id="@+id/editTextInlusWestWeeklyMCMon"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="5dp"
+                        android:ems="6"
+                        android:hint="Nml"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextInlusWestWeeklyRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:ems="4"
+                android:hint="Remarks:"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Sign Document" />
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Submit Schedule" />
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:textStyle="italic"
+                android:textColor="@color/teal_700"
+                android:text="Form Created by- Shubham Jain"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

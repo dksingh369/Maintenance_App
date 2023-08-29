@@ -28,12 +28,16 @@ public class GAGAN extends AppCompatActivity {
 
     }
 
-    public void inlus (View view){
+    public void inlusWest (View view){
 
-
-        Intent intent = new Intent(getApplicationContext(),DVORASII1150.class);
+        Intent intent = new Intent(getApplicationContext(),GaganInlusWestActivity.class);
         startActivity(intent);
+    }
 
+    public void inlusEast (View view){
+
+        Intent intent = new Intent(getApplicationContext(),GaganInlusEastActivity.class);
+        startActivity(intent);
 
     }
     @Override
