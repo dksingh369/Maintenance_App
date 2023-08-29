@@ -73,6 +73,85 @@ public class ListDataActivity extends AppCompatActivity {
                     Intent editScreenIntent;
                     switch (receivedData[1]) {
 
+                        case "NavAidsNDBSAC500QuarterlyActivity": //Add all activities here in the case
+                            editScreenIntent = new Intent(ListDataActivity.this, NavAidsNDBSAC500QuarterlyActivity.class);
+                            editScreenIntent.putExtra("id", itemID);
+                            editScreenIntent.putExtra("name", receivedData[0]);
+                            editScreenIntent.putExtra("editTextData", receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
+                        case "NavAidsNDBSAC500MonthlyActivity": //Add all activities here in the case
+                            editScreenIntent = new Intent(ListDataActivity.this, NavAidsNDBSAC500MonthlyActivity.class);
+                            editScreenIntent.putExtra("id", itemID);
+                            editScreenIntent.putExtra("name", receivedData[0]);
+                            editScreenIntent.putExtra("editTextData", receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
+
+
+
+                        case "NavAidsNDBSAC500WeeklyActivity": //Add all activities here in the case
+                            editScreenIntent = new Intent(ListDataActivity.this, NavAidsNDBSAC500WeeklyActivity.class);
+                            editScreenIntent.putExtra("id", itemID);
+                            editScreenIntent.putExtra("name", receivedData[0]);
+                            editScreenIntent.putExtra("editTextData", receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
+
+
+
+                        case "NavAidsNDBSAC500DailyActivity": //Add all activities here in the case
+                            editScreenIntent = new Intent(ListDataActivity.this, NavAidsNDBSAC500DailyActivity.class);
+                            editScreenIntent.putExtra("id", itemID);
+                            editScreenIntent.putExtra("name", receivedData[0]);
+                            editScreenIntent.putExtra("editTextData", receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
+
+                        case "NavAidsNDBAmplidon15770Daily": //Add all activities here in the case
+                            editScreenIntent = new Intent(ListDataActivity.this,NavAidsNDBAmplidon15770Daily.class);
+                            editScreenIntent.putExtra("id", itemID);
+                            editScreenIntent.putExtra("name", receivedData[0]);
+                            editScreenIntent.putExtra("editTextData", receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
+
+                        case "NavAidsNDBAmplidon15770Weekly": //Add all activities here in the case
+                            editScreenIntent = new Intent(ListDataActivity.this,NavAidsNDBAmplidon15770Weekly.class);
+                            editScreenIntent.putExtra("id", itemID);
+                            editScreenIntent.putExtra("name", receivedData[0]);
+                            editScreenIntent.putExtra("editTextData", receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
+                        case "NavAidsNDBAmplidon15770Monthly": //Add all activities here in the case
+                            editScreenIntent = new Intent(ListDataActivity.this,NavAidsNDBAmplidon15770Monthly.class);
+                            editScreenIntent.putExtra("id", itemID);
+                            editScreenIntent.putExtra("name", receivedData[0]);
+                            editScreenIntent.putExtra("editTextData", receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
+
 
                         case "GAGANINMCCpremonsoon": //Add all activities here in the case
                             editScreenIntent = new Intent(ListDataActivity.this,GAGANINMCCpremonsoon.class);
