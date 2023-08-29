@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NavAidsNDBSAC100DailyActivity">
+    tools:context=".NavAidsNDBSAC500DailyActivity">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -48,7 +48,7 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="100dp"
+                    android:layout_width="500dp"
                     android:layout_height="90dp"
                     android:layout_weight="2"
                     app:srcCompat="@drawable/logoaai" />
@@ -163,7 +163,7 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Equipment Name : NDB  Make &amp; Model : SAC - 100"
+                    android:text="Equipment Name : NDB  Make &amp; Model : SAC - 500"
                     android:textColor="@color/textViewColor"
                     android:layout_weight=".8"
                     android:layout_marginLeft="10dp"
@@ -474,7 +474,7 @@
                     <TextView
                         android:id="@+id/textView16"
                         android:layout_width="match_parent"
-                        android:layout_height="206dp"
+                        android:layout_height="364dp"
                         android:gravity="center_vertical"
                         android:text="2"
                         android:textAlignment="center"
@@ -544,7 +544,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:gravity="center_vertical"
-                        android:text="i.    PA Volt"
+                        android:text="i.    PA1 Volt"
                         android:textColor="@color/textViewColor" />
 
 
@@ -554,7 +554,25 @@
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:gravity="center_vertical"
-                        android:text="ii.   PA Current"
+                        android:text="ii.   PA1 Current"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center_vertical"
+                        android:text="iii.   PA2 Volt"
+                        android:textColor="@color/textViewColor" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center_vertical"
+                        android:text="iv.   PA2 Current"
                         android:textColor="@color/textViewColor" />
 
                     <TextView
@@ -562,7 +580,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:gravity="center_vertical"
-                        android:text="iii.   PA LED"
+                        android:text="v.   PA1 LED"
+                        android:textColor="@color/textViewColor" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="vi.   PA2 LED"
                         android:textColor="@color/textViewColor" />
 
 
@@ -587,7 +613,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:gravity="center_vertical"
-                        android:text=" &lt; 20%"
+                        android:text="&lt; 20% of FWD power"
                         android:textAlignment="center"
                         android:textColor="@color/textViewColor"  />
 
@@ -598,9 +624,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:gravity="center_vertical"
-                        android:textAlignment="textStart"
+                        android:textAlignment="center"
                         android:text="100 % (no change in value set at the time of commissioning)"
-                        android:textColor="@color/textViewColor" />
+                        android:textColor="@color/textViewColor"
+
+                        />
 
 
 
@@ -641,7 +669,36 @@
                         android:text="(Dependent on Fwd Pwr.) Set at the time of commissioning &#xB1; 4A."
                         android:textColor="@color/textViewColor" />
 
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="center_vertical"
+                        android:textAlignment="textStart"
+                        android:text="(Dependent on Fwd Pwr.) Set at the time of commissioning  &#xB1; 10%"
+                        android:textColor="@color/textViewColor"  />
 
+
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:textAlignment="textStart"
+                        android:gravity="center_vertical"
+                        android:text="(Dependent on Fwd Pwr.) Set at the time of commissioning &#xB1; 4A."
+                        android:textColor="@color/textViewColor" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="ON"
+                        android:textAlignment="center"
+                        android:textColor="@color/textViewColor" />
 
                     <TextView
                         android:id="@+id/textView17"
@@ -710,7 +767,7 @@
                         android:textStyle="bold"/>
 
                     <EditText
-                        android:id="@+id/editText11"
+                        android:id="@+id/editText8"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:ems="10"
@@ -719,7 +776,25 @@
                         android:textSize="14sp" />
 
                     <EditText
-                        android:id="@+id/editText12"
+                        android:id="@+id/editText9"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText10"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText11"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:ems="10"
@@ -737,6 +812,40 @@
 
                         <Switch
                             android:id="@+id/switch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Off"
+                            android:textOn="On"
+                            android:textOff="Off"
+                            android:textColor="@color/textViewColor"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/textViewColor"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <Switch
+                            android:id="@+id/switch2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -781,7 +890,7 @@
                         android:textStyle="bold"/>
 
                     <EditText
-                        android:id="@+id/editText8"
+                        android:id="@+id/editText12"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
@@ -791,7 +900,7 @@
 
 
                     <EditText
-                        android:id="@+id/editText9"
+                        android:id="@+id/editText13"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:ems="10"
@@ -801,7 +910,7 @@
 
 
                     <EditText
-                        android:id="@+id/editText10"
+                        android:id="@+id/editText14"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
@@ -816,7 +925,7 @@
                         android:textStyle="bold"/>
 
                     <EditText
-                        android:id="@+id/editText13"
+                        android:id="@+id/editText15"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:ems="10"
@@ -825,7 +934,25 @@
                         android:textSize="14sp" />
 
                     <EditText
-                        android:id="@+id/editText14"
+                        android:id="@+id/editText16"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText17"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:ems="10"
+                        android:textAlignment="center"
+                        android:inputType="textPersonName"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/editText18"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:ems="10"
@@ -842,7 +969,41 @@
 
 
                         <Switch
-                            android:id="@+id/switch2"
+                            android:id="@+id/switch3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Off"
+                            android:textOn="On"
+                            android:textOff="Off"
+                            android:textColor="@color/textViewColor"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/textViewColor"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <Switch
+                            android:id="@+id/switch4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -928,7 +1089,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:gravity="center_vertical"
-                        android:text="Local Control Pane"
+                        android:text="Local Control Panel"
                         android:textColor="@color/teal_700"
                         android:textStyle="bold"  />
 
@@ -1084,74 +1245,6 @@
 
 
                         <Switch
-                            android:id="@+id/switch3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Off"
-                            android:textOn="On"
-                            android:textOff="Off"
-                            android:textColor="@color/textViewColor"
-                            android:textAlignment="center"
-                            android:textSize="14sp"
-                            tools:ignore="UseSwitchCompatOrMaterialXml">
-
-                        </Switch>
-
-                        <TextView
-                            android:id="@+id/textView59"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/textViewColor"
-                            android:text="On"
-                            android:textAlignment="center"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-
-                        <Switch
-                            android:id="@+id/switch4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="Off"
-                            android:textOn="On"
-                            android:textOff="Off"
-                            android:textColor="@color/textViewColor"
-                            android:textAlignment="center"
-                            android:textSize="14sp"
-                            tools:ignore="UseSwitchCompatOrMaterialXml">
-
-                        </Switch>
-
-                        <TextView
-                            android:id="@+id/textView59"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textColor="@color/textViewColor"
-                            android:text="On"
-                            android:textAlignment="center"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-
-                        <Switch
                             android:id="@+id/switch5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1190,6 +1283,74 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:text="Off"
+                            android:textOn="On"
+                            android:textOff="Off"
+                            android:textColor="@color/textViewColor"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/textViewColor"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <Switch
+                            android:id="@+id/switch7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Off"
+                            android:textOn="On"
+                            android:textOff="Off"
+                            android:textColor="@color/textViewColor"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            tools:ignore="UseSwitchCompatOrMaterialXml">
+
+                        </Switch>
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/textViewColor"
+                            android:text="On"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <Switch
+                            android:id="@+id/switch8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:text="Not Blinking"
                             android:textOn="Blinking"
                             android:textOff="Not Blinking"
@@ -1220,7 +1381,7 @@
 
 
                         <EditText
-                            android:id="@+id/editText15"
+                            android:id="@+id/editText19"
                             android:layout_width="match_parent"
                             android:layout_height="48dp"
                             android:ems="10"
@@ -1230,7 +1391,7 @@
                             android:textSize="14sp" />
 
                         <EditText
-                            android:id="@+id/editText16"
+                            android:id="@+id/editText20"
                             android:layout_width="match_parent"
                             android:layout_height="48dp"
                             android:ems="10"
@@ -1239,7 +1400,6 @@
                             android:inputType="textPersonName"
                             android:textSize="14sp" />
                     </LinearLayout>
-
 
 
 
@@ -1284,7 +1444,7 @@
 
 
                 <EditText
-                    android:id="@+id/editText17"
+                    android:id="@+id/editText21"
                     android:layout_width="212dp"
                     android:layout_height="48dp"
                     android:ems="10"
@@ -1315,7 +1475,7 @@
                     android:layout_weight=".7" />
 
                 <EditText
-                    android:id="@+id/editText18"
+                    android:id="@+id/editText22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.3"

@@ -37,19 +37,19 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class NavAidsNDBSAC100DailyActivity extends AppCompatActivity {
+public class NavAidsNDBSAC500WeeklyActivity extends AppCompatActivity {
 
     private MyFunctions myFunctions = new MyFunctions(this);//--1--//Add this
     private MySignature mySignature = new MySignature(this);
     private int selectedID;//Copy
     private String selectedName;//Copy
     private EditText[] editTextArray;//Copy
-    private Switch[] switchArray;//Copy
+    private Switch[] switchArray= {};//Copy
     private Spinner[] spinnerArray = {};//Copy
 
     public  String Date;
 
-    private String thisActivityName = "NavAidsNDBSAC100DailyActivity"; //Change Here as per your class name
+    private String thisActivityName = "NavAidsNDBSAC500WeeklyActivity"; //Change Here as per your class name
 
     public void click(View view1) {
         View view = this.getCurrentFocus();
@@ -60,14 +60,15 @@ public class NavAidsNDBSAC100DailyActivity extends AppCompatActivity {
         }
     }
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nav_aids_ndbsac100_daily);
+        setContentView(R.layout.activity_nav_aids_ndbsac500_weekly);
 
         EditText editText1,editText2,editText3,editText4,editText5,editText6, editText7,editText8,
                 editText9,editText10,editText11,editText12, editText13,editText14,editText15,
-                editText16, editText17, editText18;
+                editText16, editText17,editText18;
 
 
         editTextArray =  new EditText[] { editText1 = (EditText) findViewById(R.id.editText1),
@@ -75,31 +76,8 @@ public class NavAidsNDBSAC100DailyActivity extends AppCompatActivity {
                 editText3 = (EditText) findViewById(R.id.editText3),
                 editText4 = (EditText) findViewById(R.id.editText4),
                 editText5 = (EditText) findViewById(R.id.editText5),
-                editText6 = (EditText) findViewById(R.id.editText6),
-                editText7 = (EditText) findViewById(R.id.editText7),
-                editText8 = (EditText) findViewById(R.id.editText8),
-                editText9 = (EditText) findViewById(R.id.editText9),
-                editText10 =(EditText) findViewById(R.id.editText10),
-                editText11 =(EditText)  findViewById(R.id.editText11),
-                editText12 = (EditText) findViewById(R.id.editText12),
-                editText13 =(EditText)  findViewById(R.id.editText13),
-                editText14 = (EditText) findViewById(R.id.editText14),
-                editText15 = (EditText) findViewById(R.id.editText15),
-                editText16 = (EditText) findViewById(R.id.editText16),
-                editText17 = (EditText) findViewById(R.id.editText17),
-                editText18 = (EditText) findViewById(R.id.editText18)};
+                editText6 = (EditText) findViewById(R.id.editText6)};
 
-
-        Switch switch1, switch2, switch3, switch4, switch5, switch6, switch7, switch8, switch9, switch10;
-
-        switchArray = new Switch[]{
-
-                switch1 = (Switch) findViewById(R.id.switch1),
-                switch2 = (Switch) findViewById(R.id.switch2),
-                switch3 = (Switch) findViewById(R.id.switch3),
-                switch4 = (Switch) findViewById(R.id.switch4),
-                switch5 = (Switch) findViewById(R.id.switch5),
-                switch6 = (Switch) findViewById(R.id.switch6)};
 
         TextView textViewN = (TextView) findViewById(R.id.textViewN);
         textViewN.setText("Name: " + PersonalDetailsActivity.naam);
@@ -189,7 +167,7 @@ public class NavAidsNDBSAC100DailyActivity extends AppCompatActivity {
 
         // Change below as per requirement-----------------------------------------------------------
         // crate a page description
-        PdfDocument.PageInfo myPageInfo1 = new PdfDocument.PageInfo.Builder(1270,1795, 1).create();
+        PdfDocument.PageInfo myPageInfo1 = new PdfDocument.PageInfo.Builder(1384,1792, 1).create();
 
         // start a page
         PdfDocument.Page myPage1 = myPdfdocument.startPage(myPageInfo1);
@@ -200,8 +178,8 @@ public class NavAidsNDBSAC100DailyActivity extends AppCompatActivity {
 
 
 //--------------------------------------------------------------------------------------------
-        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.ndbsac100daily);
-        scaledbmp = Bitmap.createScaledBitmap(bmp, 1270,1795, false);
+        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.ndbsac500weekly);
+        scaledbmp = Bitmap.createScaledBitmap(bmp, 1384,1792, false);
 //--------------------------------------------------------------------------------------------
         canvas.drawBitmap(scaledbmp, 0, 0, paint);
 
@@ -219,25 +197,16 @@ public class NavAidsNDBSAC100DailyActivity extends AppCompatActivity {
         //canvas.drawBitmap(PersonalDetailsActivity.sigNature, 1325, 2720, paint);
         titlePaint.setTextSize(20);
 
-        int[] editTextXPixel1 = {483,790,790,790,756,756,756,856,856,856,756,756,856,856,756,856,746,85};
-        int[] editTextYPixel1 = {295,428,460,495,589,635,692,589,635,692,741,795,741,795,1084,1084,1143,1245};
-
-        int[] switchXPixel1 = {743,839,743,743,743,743};
-        int[] switchYPixel1 = {893,893,933,970,1011,1051};
+        int[] editTextXPixel1 = {227,882,882,882,882,161};
+        int[] editTextYPixel1 = {287,426,507,605,722,899};
 
 
-        // Change till here as per requirements ----------------------------------------------------
-
-        //Fixed for all activity--------------------------------------------------------------------
 
         for (int i = 0; i < editTextXPixel1.length; i++) {
             canvas.drawText(editTextDataForPDF[i], editTextXPixel1[i], editTextYPixel1[i], titlePaint);
         }
 
 
-        for (int i = 0; i < switchXPixel1.length; i++) {
-            canvas.drawText(switchDataForPDF[i], switchXPixel1[i], switchYPixel1[i], titlePaint);
-        }
 
 
         Calendar calendar = Calendar.getInstance();
@@ -249,9 +218,9 @@ public class NavAidsNDBSAC100DailyActivity extends AppCompatActivity {
         // Change as per your requirement-----------------------------------------------------------
         titlePaint.setTextSize(20);
 
-        canvas.drawText(Date, 144, 295, titlePaint);//Printing Date on PDF
+        canvas.drawText(Date, 980,283, titlePaint);//Printing Date on PDF
 
-        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,350,360, false), 692,1290, paint);
+        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,350,360, false), 666,1150, paint);
 
         myPdfdocument.finishPage(myPage1);
 
@@ -262,14 +231,14 @@ public class NavAidsNDBSAC100DailyActivity extends AppCompatActivity {
                 Manifest.permission.WRITE_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
 
         //----------------------Change-----------------------------------------------------------------------------
-        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Nav - Aids/NDB/SAC - 100/Daily/";// Change Here------------------
+        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Nav - Aids/NDB/SAC - 500/Weekly/";// Change Here------------------
         File file = new File(directory_path);
         if (!file.exists()) {
             file.mkdirs();
         }
         //String targetPdf = directory_path + "test.pdf";
         //String fileName = "Daily ADSB " + dateFormat.format(dateObj) + ".pdf";
-        String fileName = "NDB_SAC_100_Daily_" + strData + ".pdf"; // Change Here--------------------------
+        String fileName = "NDB_SAC_500_Weekly_" + strData + ".pdf"; // Change Here--------------------------
         String targetPdf = directory_path + fileName;
         File filePath = new File(targetPdf);
         try {
@@ -285,14 +254,14 @@ public class NavAidsNDBSAC100DailyActivity extends AppCompatActivity {
         //This function saves all the data to parse Server
         //myFunctions.saveToParse(String targetPdf, String fileName, String Equipment,String Schedule_Type,String EditTextData)
 
-       myFunctions.saveToParse(targetPdf, fileName, "NDB", "Daily", outputEditText, MyFunctions.specificCode("d"),outputSwitch, "outputSpinner");// Change Here-----------------------
+       myFunctions.saveToParse(targetPdf, fileName, "NDB", "Weekly", outputEditText, MyFunctions.specificCode("w"),"outputSwitch", "outputSpinner");// Change Here-----------------------
 
         // This function will send eMail using JavaMailAPI
         //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)
 
 
         myFunctions.sendEmail(PersonalDetailsActivity.emailTo + "@aai.aero",
-                "Daily Maintenance of NDB SAC 100 done.",//Change Here-----------------------------
+                "Weekly Maintenance of NDB SAC 500 done.",//Change Here-----------------------------
                 "Maintenance Schedule is attached. Please verify.", targetPdf, fileName);
         //---------------------------------------------------------------------------------------------------------
 
@@ -373,3 +342,4 @@ public class NavAidsNDBSAC100DailyActivity extends AppCompatActivity {
         }
     }
 }
+

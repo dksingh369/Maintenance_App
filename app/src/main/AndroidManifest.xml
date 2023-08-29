@@ -23,7 +23,42 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-   <!-- Akshay's Activities Starts -->
+        <activity
+            android:name=".NavAidsNDBSAC500MonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsNDBSAC500QuarterlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsNDBSAC500WeeklyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsNDBSAC500DailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NDBSAC"
+            android:exported="false" />
+        <activity
+            android:name=".NDBSAC500"
+            android:exported="false" /> <!-- Akshay's Activities Starts -->
+        <activity
+            android:name=".NDB"
+            android:exported="false" />
+        <activity
+            android:name=".NDBSAC100"
+            android:exported="false" />
+        <activity
+            android:name=".NDBAmplidon15770"
+            android:exported="false" />
+        <activity
+            android:name=".NavAidsNDBAmplidon15770Monthly"
+            android:exported="true" />
+        <activity
+            android:name=".NavAidsNDBAmplidon15770Weekly"
+            android:exported="true" />
+        <activity
+            android:name=".NavAidsNDBAmplidon15770Daily"
+            android:exported="false" />
         <activity
             android:name=".GAGANINMCC"
             android:exported="false" />
@@ -456,122 +491,49 @@
             android:exported="false" />
         <activity
             android:name=".AmssIpInhouseMonthlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DatisSistekMonthlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DatisSistekDailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DatisSistekActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DatisTermaWeeklyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DatisTermaDailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DatisTermaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VhfTxEcilDailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VhfRxEcilSixMonthlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VhfRxEcilMonthlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VhfRxEcilDailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".VHFDVRRetiaMonthlyActivity"
             android:exported="false" /> <!-- Naveen's Activities Ends -->
         <!-- Shubham's Activities Starts -->
-        <activity
-            android:name=".GaganInlusEastPreMonsoonActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusEastSixMonthlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusEastQuarterlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusEastMonthlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusEastWeeklyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusEastDailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusWestPreMonsoonActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusWestQuarterlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusWestSixMonthlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusWestMonthlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusWestWeeklyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusWestDailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusEastActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GaganInlusWestActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NavigationGpNormarc35Activity"
-            android:exported="false" />
-        <activity
-            android:name=".NavigationLlzNormarc35Activity"
-            android:exported="false" />
-        <activity
-            android:name=".GpNormarc35SixActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GpNormarc35QuarterlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GpNormarc35WeeklyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GpNormarc35DailyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LlzNormarc35AnnualActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LlzNormarc35SixActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LlzNormarc35QuarterlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LlzNormarc35MonthlyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LlzNormarc35WeeklyActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LlzNormarc35DfrActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LlzNormarc35DailyActivity"
-            android:exported="false" />
+        <!--
+<activity
+          android:name=".NavigationGpNormarc35Activity"
+          android:exported="false" />
+      <activity
+          android:name=".NavigationLlzNormarc35Activity"
+          android:exported="false" />
+      <activity
+          android:name=".GpNormarc35SixActivity"
+          android:exported="false" />
+      <activity
+          android:name=".GpNormarc35QuarterlyActivity"
+          android:exported="false" />
+      <activity
+          android:name=".GpNormarc35WeeklyActivity"
+          android:exported="false" />
+      <activity
+          android:name=".GpNormarc35DailyActivity"
+          android:exported="false" />
+      <activity
+          android:name=".LlzNormarc35AnnualActivity"
+          android:exported="false" />
+      <activity
+          android:name=".LlzNormarc35SixActivity"
+          android:exported="false" />
+      <activity
+          android:name=".LlzNormarc35QuarterlyActivity"
+          android:exported="false" />
+      <activity
+          android:name=".LlzNormarc35MonthlyActivity"
+          android:exported="false" />
+      <activity
+          android:name=".LlzNormarc35WeeklyActivity"
+          android:exported="false" />
+      <activity
+          android:name=".LlzNormarc35DfrActivity"
+          android:exported="false" />
+      <activity
+          android:name=".LlzNormarc35DailyActivity"
+          android:exported="false" />
+        -->
         <activity
             android:name=".LlzAsiiQuarterly2Activity"
             android:exported="false" />
