@@ -271,7 +271,7 @@ public class PersonalDetailsActivity extends AppCompatActivity implements View.O
         emailTo = email.getText().toString();
 
         airportName.setText(s2);
-        airportNameICAO = airportName.getText().toString();
+        airportNameICAO = airportName.getText().toString().toUpperCase();
         //age.setText(String.valueOf(a));
     }
 
@@ -296,7 +296,7 @@ public class PersonalDetailsActivity extends AppCompatActivity implements View.O
         emailTo = email.getText().toString();
         //myEdit.putInt("age", Integer.parseInt(age.getText().toString()));
         myEdit.putString("airportname", airportName.getText().toString());
-        airportNameICAO = airportName.getText().toString();
+        airportNameICAO = airportName.getText().toString().toUpperCase();
         myEdit.apply();
     }
 
