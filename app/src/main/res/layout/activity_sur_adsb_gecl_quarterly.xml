@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SurAdsbGeclQuarterlyActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/textVie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:layout_marginStart="20dp"
+                    android:text="Airports Authority of India"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/logoaai" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:layout_marginEnd="10dp"
+                    android:text="CNS MANUAL VOL.VII Part 3"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Name: "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Desig: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Emp No.: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Location: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Preventive Maintenance Schedule : Quarterly \n ADS-B"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:text="EQPT : ADS-B "
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="Make/Model : GECL/GT-280 "
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="Date :"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight=".8"
+                    android:textColor="@color/textViewColor"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:hint="Name of Station: "
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:hint="Region: "
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Frequency : 1090 MHz "
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Sl. No."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="STATUS/PARAMETERS"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Observed/Normal Status/VALUE"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="1.   GENERAL"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="1.1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Monthly maintenance carried out"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint="Yes/No"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="1.2"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="LCMS/GCMS station Cleaning"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint="Performed/Clean"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="1.3"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="ADS-B Servers,Switch and UPS Cleaning"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint="Performed/Clean"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="1.4"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Racks and Fans Cleaning"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint="Performed/Clean"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="2. Preventive Maintenance of ADS-B Sensors"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="ADS-B Sensor-1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="ADS-B Sensor-2"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Physical Checkup of Antenna Radome"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.2"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Physical Checkup of GPS Antenna"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText10"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText11"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.3"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Physical Checkup of RF Box,Associated cables and connectors"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText13"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.4"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Physical Checkup of Ground Equipment RF Cables connections"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText14"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText15"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.5"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Physical Checkup of LAN cables and connections"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText16"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText17"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.6"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Physical Checkup of Power cables and connections"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText18"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText19"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="OK"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="3. Earth Pit"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Observed Status"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Remarks"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="3.1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Earth pit Physical condition"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText20"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText21"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Remarks"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="3.2"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Earth pit copper strips joint and brazing status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText22"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText23"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Remarks"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="3.3"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Area surrounding Earth pit"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText24"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText25"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Remarks"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="3.4"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Measured Earth Resistance value"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText26"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Value (Less then 5 Ohms)"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText27"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Remarks"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="3.5"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Measured Earth Neutral Voltage (UPS O/P)"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText28"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Value (Less then 3 Volts)"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText29"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Remarks"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="4. Servers Backup"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Observed Status"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="4.1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Server-1 : Image Backup carry out"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText30"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="4.2"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Server-2 : Image Backup carry out"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText31"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text=" Remarks/Action taken"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/editText32"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:hint="Remarks/Action"
+                    android:inputType="textMultiLine"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Submit Schedule" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Sign Document"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:text="Form Created by- Sunny Chaurasiya"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

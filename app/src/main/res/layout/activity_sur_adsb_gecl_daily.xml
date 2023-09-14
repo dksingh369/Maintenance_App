@@ -1,0 +1,3725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SurAdsbGeclDailyActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/textVie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:layout_marginStart="20dp"
+                    android:text="Airports Authority of India"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/logoaai" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:layout_marginEnd="10dp"
+                    android:text="CNS MANUAL VOL.VII Part 3"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Name: "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Desig: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Emp No.: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Location: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Preventive Maintenance Schedule : DAILY \n ADS-B"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:text="EQPT : ADS-B "
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="Make/Model : GECL/GT-280 "
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="Date :"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight=".8"
+                    android:textColor="@color/textViewColor"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:hint="Name of Station: "
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:hint="Region: "
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Frequency : 1090 MHz "
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="1. GENERAL"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Sl. No."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Parameters"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1."
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Observed/Normal Status"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="1.1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="General Cleanliness of Equipment Room"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="1.2"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Air Conditioner Status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint=" Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="1.3"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Room Temperature"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint=" Less then 25 C"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="1.4"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Humidity"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint=" 20% to 80%"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="1.5"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Room Lighting"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint=" Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="1.6"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Equipment Blower Fan Status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint=" Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="1.7"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textAlignment="center"
+                    android:text="Obstruction Lights Status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText10"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:hint=" Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="2. Ground Station Status (From GCMS):"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Sl. No."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Parameter"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Server-1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Server-2"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Observed Status"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Value"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Observed Status"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Value"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:text="Redundancy Status"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText11"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText13"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText14"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Operational Mode"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText15"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText16"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText17"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText18"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Service Status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText19"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText20"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText21"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText22"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.4"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Time Source Valid"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText23"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText24"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText25"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText26"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.5"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Site Monitor Bite Status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText27"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText28"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText29"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText30"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.6"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Target Capacity"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText31"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText32"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText33"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText34"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.7"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Message Capacity"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText35"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText36"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText37"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText38"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.8"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Comm. Bandwidth"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText39"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText40"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText41"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText42"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.9"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="CPU Load"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText43"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText44"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText45"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText46"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.10"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Memory Usage"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText47"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText48"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText49"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText50"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.11"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Disk Usage"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText51"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText52"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText53"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText54"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.12"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Process Load"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText55"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText56"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText57"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText58"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.13"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="UPS Output Status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText59"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText60"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText61"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText62"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="2.14"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="UPS Battery Status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText63"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText64"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText65"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText66"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="3. Receiver Status (From GCMS):"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Sl. No."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Parameter"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Receiver-1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Receiver-2"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Observed Status"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Value"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Observed Status"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".35"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Value"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="3.1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Site Monitor/ ADS-B Packets"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText67"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText68"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText69"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText70"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="3.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="GPS Status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText71"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText72"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText73"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText74"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="3.3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="GPS Jamming"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText75"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText76"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText77"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText78"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="3.4"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="CPU Load"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText79"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText80"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText81"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText82"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="3.5"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Temperature"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText83"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText84"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText85"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText86"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="3.6"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Power Status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText87"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText88"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText89"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText90"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".35"
+                    android:textAlignment="center"
+                    android:hint="Value"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="4. Receiver Front Panel Indications:"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Sl. No."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Receiver LEDs"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Nominal/Observed Status"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Receiver-1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Receiver-2"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="4.1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Off Air Test"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText91"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText92"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="4.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Site Monitor"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText93"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText94"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="4.3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Fault Off/Red"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText95"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText96"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="4.4"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="ADS-B Receiver"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText97"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText98"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="4.5"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="GPS"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText99"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText100"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="4.6"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Ethernet"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText101"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText102"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="4.7"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="CPU Status"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText103"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText104"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="4.8"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="PSS"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText105"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText106"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="4.9"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="AC1"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText107"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText108"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="5. Server Front Panel Indications:"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Sl. No."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Server LEDs"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Nominal/Observed Status"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Server-1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Server-2"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="5.1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Power Supply indication"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText109"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText110"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="5.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Hard Drive Bay indication"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText111"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText112"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="5.3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Health LED"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText113"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText114"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="5.4"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="NIC status LED"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText115"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText116"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="6. Network Switches Front Panel Indications:"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Sl. No."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Switch LEDs"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Nominal/Observed Status"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Switch-A"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Switch-B"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="6.1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Power LED"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText117"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText118"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="6.1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Fault"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText119"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText120"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="6.3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="LED Mode"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText121"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText122"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".7"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="7. UPS/Battery Readings:"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Sl. No."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Parameter"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="UPS-1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="UPS-2"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Remarks"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="7.1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="I/P Voltage(V)/Current(A)"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText123"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="230+-10%/36A max."
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText124"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="230+-10%/36A max."
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText125"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:hint="Remarks"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="7.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="I/P Frequency(Hz)"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText126"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="50Hz"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText127"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="50Hz"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText128"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:hint="Remarks"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="7.3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="O/P Voltage(V)/Current(A)"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText129"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="230+-10%/36A max."
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText130"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="230+-10%/36A max."
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText131"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:hint="Remarks"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="7.4"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="O/P Frequency(Hz)"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText132"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="50Hz"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText133"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="50Hz"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText134"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:hint="Remarks"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="7.5"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Battery Voltage"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText135"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="More then 192V"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText136"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="More Then 192V"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText137"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:hint="Remarks"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="7.6"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="O/P Load %"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText138"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="Less then 80%"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText139"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".4"
+                    android:textAlignment="center"
+                    android:hint="Less then 80%"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText140"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:hint="Remarks"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="8. GCMS Display Target Monitoring Summary (Details of any one target):"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Sl. No."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Parameter"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Target Details"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="8.1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="SSR Code/Mode-S Address"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText141"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.2"
+                    android:textAlignment="center"
+                    android:hint="Details"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="8.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Call Sign"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText142"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.2"
+                    android:textAlignment="center"
+                    android:hint="Details"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="8.3"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Latitude/Longitude"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText143"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.2"
+                    android:textAlignment="center"
+                    android:hint="Details"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="8.4"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Altitude"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText144"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.2"
+                    android:textAlignment="center"
+                    android:hint="Details"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="8.5"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="Range"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText145"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.2"
+                    android:textAlignment="center"
+                    android:hint="Details"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="8.6"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="NCUp value"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText146"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.2"
+                    android:textAlignment="center"
+                    android:hint="Details"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:textAlignment="center"
+                    android:text="8.7"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:text="GPS Time of Monitoring"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/editText147"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.2"
+                    android:textAlignment="center"
+                    android:hint="Details"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text=" Remarks/Action taken"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/editText148"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:hint="Remarks/Action"
+                    android:inputType="textMultiLine"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Submit Schedule" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Sign Document"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:text="Form Created by- Sunny Chaurasiya"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

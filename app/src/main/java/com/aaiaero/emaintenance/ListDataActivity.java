@@ -2704,7 +2704,7 @@ public class ListDataActivity extends AppCompatActivity {
                             break;
 
                         case "SurAdsbComsoftDailyActivity":
-                            editScreenIntent = new Intent(ListDataActivity.this, SurvADSBComsoftDailyActivity.class);
+                            editScreenIntent = new Intent(ListDataActivity.this, SurAdsbComsoftDailyActivity.class);
                             editScreenIntent.putExtra("id",itemID);
                             editScreenIntent.putExtra("name",receivedData[0]);
                             editScreenIntent.putExtra("editTextData",receivedData[2]);
@@ -2713,7 +2713,7 @@ public class ListDataActivity extends AppCompatActivity {
                             startActivity(editScreenIntent);
                             break;
 
-                      /*  case "SurAdsbComsoftMonthlyActivity":
+                        case "SurAdsbComsoftMonthlyActivity":
                             editScreenIntent = new Intent(ListDataActivity.this, SurAdsbComsoftMonthlyActivity.class);
                             editScreenIntent.putExtra("id",itemID);
                             editScreenIntent.putExtra("name",receivedData[0]);
@@ -2741,7 +2741,37 @@ public class ListDataActivity extends AppCompatActivity {
                             editScreenIntent.putExtra("switchData", receivedData[3]);
                             editScreenIntent.putExtra("spinnerData", receivedData[4]);
                             startActivity(editScreenIntent);
-                            break;*/
+                            break;
+
+                        case "SurAdsbGeclDailyActivity":
+                            editScreenIntent = new Intent(ListDataActivity.this, SurAdsbGeclDailyActivity.class);
+                            editScreenIntent.putExtra("id",itemID);
+                            editScreenIntent.putExtra("name",receivedData[0]);
+                            editScreenIntent.putExtra("editTextData",receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
+                        case "SurAdsbGeclMonthlyActivity":
+                            editScreenIntent = new Intent(ListDataActivity.this, SurAdsbGeclMonthlyActivity.class);
+                            editScreenIntent.putExtra("id",itemID);
+                            editScreenIntent.putExtra("name",receivedData[0]);
+                            editScreenIntent.putExtra("editTextData",receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
+
+                        case "SurAdsbGeclQuarterlyActivity":
+                            editScreenIntent = new Intent(ListDataActivity.this, SurAdsbGeclQuarterlyActivity.class);
+                            editScreenIntent.putExtra("id",itemID);
+                            editScreenIntent.putExtra("name",receivedData[0]);
+                            editScreenIntent.putExtra("editTextData",receivedData[2]);
+                            editScreenIntent.putExtra("switchData", receivedData[3]);
+                            editScreenIntent.putExtra("spinnerData", receivedData[4]);
+                            startActivity(editScreenIntent);
+                            break;
 
 
                     }

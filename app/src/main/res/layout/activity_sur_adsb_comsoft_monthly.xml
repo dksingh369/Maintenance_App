@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SurAdsbComsoftMonthlyActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/textVie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:layout_marginStart="20dp"
+                    android:text="Airports Authority of India"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="2"
+                    app:srcCompat="@drawable/logoaai" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:layout_marginEnd="10dp"
+                    android:text="CNS MANUAL VOL.VII Part 3"
+                    android:textAlignment="textEnd"
+                    android:textSize="14sp"
+                    android:textColor="@color/textViewColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Name: "
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Desig: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Emp No.: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:text="Location: "
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Preventive Maintenance Schedule : Monthly \n ADS-B"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:text="EQPT : ADS-B "
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:text="Make : COMSOFT "
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="Date :"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight=".8"
+                    android:textColor="@color/textViewColor"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="Name of Station: "
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="Region: "
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Sl.No."
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:fontFamily="sans-serif-black"
+                    android:text="STATUS/PARAMETERS"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:text="OBSERVED/NORMAL STATUS"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Sensor A"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:fontFamily="sans-serif-black"
+                    android:textAlignment="center"
+                    android:text="Sensor B"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="1."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Sensor Configuration"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="1.a"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="GPS Latitude"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="deg"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="deg"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="1.b"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="GPS Longitude"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="deg"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="deg"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="1.a"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="GPS Geodial Height"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="meters"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="meters"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="2."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Power on Self Test (POST) Results"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="2.a"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="General Results"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText10"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText11"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="2.b"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="GPS"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText13"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="2.c"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Temp Sensing"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText14"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText15"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="2.d"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Voltage Sensing"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText16"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText17"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="2.e"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="FPGA"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText18"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText19"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="2.f"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Receiver"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText20"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText21"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="3."
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:fontFamily="sans-serif-black"
+                    android:text="System Status Information (Maintenance Mode)"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.a"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="CPU Load"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText22"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="0 - 75%"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText23"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="0 - 75%"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.b"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="GPS Status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText24"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText25"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.c"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="GPS Synchronized"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText26"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText27"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="3.1"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Voltage and Temperature"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.1.a"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Intermediate Volt (+ve)"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText28"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="9.5V to 13.5V"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText29"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="9.5V to 13.5V"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.1.b"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Intermediate Volt (-ve)"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText30"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="-13.5V to -9.5V"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText31"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="-13.5V to -9.5V"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.1.c"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="GPS Voltage"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText32"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="9.5V to 13.5V"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText33"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="9.5V to 13.5V"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.1.d"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="FPGA Core Voltage"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText34"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="1.0V to 1.4V"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText35"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="1.0V to 1.4V"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.1.e"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="FPGA Auxiliary Voltage"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText36"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="2.3V to 2.7V"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText37"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="2.3V to 2.7V"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.1.f"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="DSP Board Voltage"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText38"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="3.1V to 3.5V"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText39"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="3.1V to 3.5V"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.1.g"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="DSP Board Temperature"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText40"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="3.1V to 3.5V"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText41"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="3.1V to 3.5V"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="3.2"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Site Monitor Statistics"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.2.a"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Signal Strength of last RF Site Mon Msg"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText42"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="0-255"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText43"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="0-255"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="3.3"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:fontFamily="sans-serif-black"
+                    android:text="End to End Test Results"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.3.a"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="End to End Test"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText44"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText45"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.3.b"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="RX sensitivity"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText46"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText47"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.3.c"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Test Transmission Loss"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText48"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText49"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.3.d"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Decoder Test"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText50"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText51"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Result"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="3.4"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.8"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Device Status"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.4.a"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="GND Station Status"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText52"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText53"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.4.b"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Overall build-in-test result"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText54"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText55"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="3.4.b"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="UTC Synchronization State"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editText56"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/editText57"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".5"
+                    android:textAlignment="center"
+                    android:hint="Status"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text=" Remarks/Action taken"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/editText58"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1.5"
+                    android:ems="10"
+                    android:hint="Remarks/Action"
+                    android:inputType="textMultiLine"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Submit Schedule" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="Sign Document"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:text="Form Created by- Sunny Chaurasiya"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

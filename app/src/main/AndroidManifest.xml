@@ -24,6 +24,30 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".AdsbGeclActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SurAdsbGeclQuarterlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SurAdsbGeclMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SurAdsbGeclDailyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SurAdsbComsoftUpsMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SurAdsbComsoftQuarterlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SurAdsbComsoftMonthlyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SurAdsbComsoftDailyActivity"
+            android:exported="false" />
+        <activity
             android:name=".NavAidsNDBSAC500MonthlyActivity"
             android:exported="false" />
         <activity

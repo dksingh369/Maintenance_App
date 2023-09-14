@@ -22,7 +22,7 @@ public class ADSBActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adsb);
 
-        setTitle("ADS-B Maintenance");
+        setTitle("ADS-B COMSOFT Maintenance");
 
         daily = (Button) findViewById(R.id.daily);
         weekly = (Button) findViewById(R.id.weekly);
@@ -37,10 +37,10 @@ public class ADSBActivity extends AppCompatActivity {
 
     }
 
-   public void dailyClicked (View view){
+    public void dailyClicked (View view){
         // Launch the VHF Equipment Room Activity
 
-        Intent intent = new Intent(getApplicationContext(), SurvADSBComsoftDailyActivity.class);
+        Intent intent = new Intent(getApplicationContext(), SurAdsbComsoftDailyActivity.class);
         startActivity(intent);
 
 
@@ -53,7 +53,7 @@ public class ADSBActivity extends AppCompatActivity {
 
     }
 
-   /* public void fortnightlyClicked (View view){
+    public void fortnightlyClicked (View view){
         // Launch the DATISEquipment Room Activity
 
         Intent intent = new Intent(getApplicationContext(),SurAdsbComsoftUpsMonthlyActivity.class);
@@ -91,7 +91,7 @@ public class ADSBActivity extends AppCompatActivity {
 
 
 
-    }*/
+    }
 
     public void miscellaneousClicked (View view){
         // Launch the Others Equipment Room Activity
