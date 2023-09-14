@@ -58,10 +58,10 @@
             android:textSize="12sp" />
 
         <Button
-            android:text="Others"
+            android:text="GECL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/otherMake"
+            android:id="@+id/gecl"
             android:layout_row="0"
             android:layout_column="1"
             android:layout_gravity="fill"

@@ -15,7 +15,7 @@ public class ADSBMakeModelActivity extends AppCompatActivity {
         setContentView(R.layout.activity_adsbmake_model);
 
         Button comsoft = (Button) findViewById(R.id.comsoft);
-        Button otherMake = (Button) findViewById(R.id.otherMake);
+        Button gecl = (Button) findViewById(R.id.gecl);
 
         comsoft.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,9 +25,12 @@ public class ADSBMakeModelActivity extends AppCompatActivity {
             }
         });
 
-        otherMake.setOnClickListener(new View.OnClickListener() {
+        gecl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(),AdsbGeclActivity.class);
+                startActivity(intent);
 
             }
         });
