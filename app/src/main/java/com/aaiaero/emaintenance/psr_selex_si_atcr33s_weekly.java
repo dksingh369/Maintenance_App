@@ -1,8 +1,5 @@
 package com.aaiaero.emaintenance;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -28,6 +25,9 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -36,8 +36,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
-
+public class psr_selex_si_atcr33s_weekly extends AppCompatActivity {
 
 
     private MyFunctions myFunctions = new MyFunctions(this);//--1--//Add this
@@ -48,27 +47,27 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
     private Switch[] switchArray;//Copy
     private Spinner[] spinnerArray={};//Copy
 
-    private String thisActivityName = "SurvADSBComsoftDailyActivity"; //Change Here as per your class name
-
-
-
-
+    private String thisActivityName = "psr_selex_si_atcr33s_weekly"; //Change Here as per your class name
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_surv_adsbcomsoft_daily);
-        //----------------------------------Change Here------------------------------
-    /* Edit text serially numbered from 3. Total No.of, Edit texts = 35 , switches =3,
-             spinners = 9. , Buttons = 2
-          */
+        setContentView(R.layout.activity_psr_selex_si_atcr33s_weekly);
+
+        /* All are serially numbered from 1. Total No.of, Edit texts = 49 (first 48 single line, 1 multiline), switches =4,
+             , Buttons = 2
+         */
         //Define and Initialize all EditTexts serially here
-        EditText editText3, editText4, editText5, editText6, editText7, editText8,editText9,editText10,
+        EditText editText1, editText2, editText3, editText4, editText5, editText6, editText7, editText8,editText9, editText10,
                 editText11,editText12,editText13,editText14,editText15,editText16,editText17,editText18,editText19,editText20,
                 editText21,editText22,editText23,editText24,editText25,editText26,editText27,editText28,editText29,editText30,
-                editText31,editText32,editText33,editText34,editText35,editText36,editText37;
+                editText31,editText32,editText33,editText34,editText35,editText36,editText37,editText38,editText39,editText40,
+                editText41,editText42,editText43,editText44,editText45,editText46,editText47,editText48,editText49;
 
 
-        editTextArray = new EditText[]{editText3 = (EditText) findViewById(R.id.editText3),
+        editTextArray = new EditText[]{
+                editText1 = (EditText) findViewById(R.id.editText1),
+                editText2 = (EditText) findViewById(R.id.editText2),
+                editText3 = (EditText) findViewById(R.id.editText3),
                 editText4 = (EditText) findViewById(R.id.editText4),
                 editText5 = (EditText) findViewById(R.id.editText5),
                 editText6 = (EditText) findViewById(R.id.editText6),
@@ -102,30 +101,30 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
                 editText34 = (EditText) findViewById(R.id.editText34),
                 editText35 = (EditText) findViewById(R.id.editText35),
                 editText36 = (EditText) findViewById(R.id.editText36),
-                editText37 = (EditText) findViewById(R.id.editText37)};
+                editText37 = (EditText) findViewById(R.id.editText37),
+                editText38 = (EditText) findViewById(R.id.editText38),
+                editText39 = (EditText) findViewById(R.id.editText39),
+                editText40 = (EditText) findViewById(R.id.editText40),
+                editText41 = (EditText) findViewById(R.id.editText41),
+                editText42 = (EditText) findViewById(R.id.editText42),
+                editText43 = (EditText) findViewById(R.id.editText43),
+                editText44 = (EditText) findViewById(R.id.editText44),
+                editText45 = (EditText) findViewById(R.id.editText45),
+                editText46 = (EditText) findViewById(R.id.editText46),
+                editText47 = (EditText) findViewById(R.id.editText47),
+                editText48 = (EditText) findViewById(R.id.editText48),
+                editText49 = (EditText) findViewById(R.id.editText49)};
 
 
         //Define and Initialize all Switches serially here
-        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch switch1,switch2,switch3;
+        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch switch1,switch2,switch3,switch4;
 
 
-        switchArray = new Switch[]{switch1 = (Switch) findViewById(R.id.switch1),
+        switchArray = new Switch[]{
+                switch1 = (Switch) findViewById(R.id.switch1),
                 switch2 = (Switch) findViewById(R.id.switch2),
-                switch3 = (Switch) findViewById(R.id.switch3)};
-
-        Spinner spinner1,spinner2,spinner3,spinner4,spinner5,spinner6,spinner7,spinner8,spinner9;
-        spinnerArray = new Spinner[]{
-                spinner1 = (Spinner) findViewById(R.id.spinner1),
-                spinner2 = (Spinner) findViewById(R.id.spinner2),
-                spinner3 = (Spinner) findViewById(R.id.spinner3),
-                spinner4 = (Spinner) findViewById(R.id.spinner4),
-                spinner5 = (Spinner) findViewById(R.id.spinner5),
-                spinner6 = (Spinner) findViewById(R.id.spinner6),
-                spinner7 = (Spinner) findViewById(R.id.spinner7),
-                spinner8 = (Spinner) findViewById(R.id.spinner8),
-                spinner9 = (Spinner) findViewById(R.id.spinner9)};
-
-
+                switch3 = (Switch) findViewById(R.id.switch3),
+                switch4 = (Switch) findViewById(R.id.switch4)};
 
         //---------------------To Set View in Current Activity------------------
 
@@ -194,8 +193,8 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
         });
     }// End of On create
 
-
     private void generatePDF(){
+
         // Fixed for all activity-------------------------------------------------------------------
 
         String outputEditText = myFunctions.getEditTextDataForPDF(editTextArray);
@@ -215,7 +214,6 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
         Paint paint = new Paint();
         Paint titlePaint = new Paint();
 
-
         // Change below as per requirement-----------------------------------------------------------
         // ******************Code for Page 1****************
         // create a page description
@@ -228,7 +226,7 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
 
         Bitmap bmp,scaledbmp; //only exists(i.e declaration) in page 1.
 //-------------------------change here and put correct image name as per drawable--------------------------------
-        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.survadsbcomsoftdailypage1);
+        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.selexpsrweekly);
         scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
 //--------------------------------------------------------------------------------------------
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
@@ -240,13 +238,11 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
         //--------------------------------Change below as per your requirement------------------------------------------------------
 
         //---------------select the type of data types used omit rest of them --------------------------------
-        int[] editTextXPixel1 = {528,528,528,528,528,528,528,528,528,528,528,528,528,528,528};
-        int[] editTextYPixel1 = {323,341,375,436,651,704,769,787,805,823,858,876,892,912,948};
+        int[] editTextXPixel1 = {131,296,416,416,416,416,416,416,416,416,416,416,416,416,416,416,416,416,416,416,416,416,416,416,416,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,109};
+        int[] editTextYPixel1 = {148,149,241,260,279,297,317,336,355,374,393,412,431,448,468,506,525,543,563,582,602,620,638,657,677,241,260,279,297,317,336,355,374,393,412,431,448,468,506,525,543,563,582,602,620,638,657,677,759};
 
-        int[] switchXPixel1 = {528,528,528};
-        int[] switchYPixel1 = {303,358,613};
-        int[] spinnerXPixel1 = {528,528,528,528,528,528,528,528,528};
-        int[] spinnerYPixel1 = {472,490,508,526,544,561,596,631,667};
+        int[] switchXPixel1 = {416,503,421,421};
+        int[] switchYPixel1 = {221,221,709,726};
 
 
 
@@ -262,9 +258,6 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
             canvas.drawText( switchDataForPDF[i],switchXPixel1[i],switchYPixel1[i],titlePaint);
         }
 
-        for(int i = 0; i < spinnerXPixel1.length; i++){
-            canvas.drawText( spinnerDataForPDF[i],spinnerXPixel1[i],spinnerYPixel1[i],titlePaint);
-        }
 
 
         // ******************not required other than page 1****************
@@ -276,64 +269,16 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
         // Change as per your requirement-----------------------------------------------------------
         titlePaint.setTextSize(13);
 
-        canvas.drawText(strData,472,210,titlePaint);//Printing Date on PDF
+        canvas.drawText(strData,505,145,titlePaint);//Printing Date on PDF
+
+        //--------------------------------Change below as per your requirement------------------------------------------------------
+        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 440, 775, paint);  //  For signature printing used in the last page usually
+        titlePaint.setTextSize(13);
 
         myPdfdocument.finishPage(myPage1);
 
 
         //---------------------End of Page 1----------------
-        // Change below as per requirement-----------------------------------------------------------
-        // ******************Code for Page 2****************
-        // create a page description
-        PdfDocument.PageInfo myPageInfo2 = new PdfDocument.PageInfo.Builder(723, 1023, 2).create();
-        // initialising canvas & bitmap and start of page 2
-        PdfDocument.Page myPage2 = myPdfdocument.startPage(myPageInfo2);
-        canvas = myPage2.getCanvas();
-
-        //-------------------------change here and put correct image name as per drawable--------------------------------
-        bmp = BitmapFactory.decodeResource(getResources(),R.drawable.survadsbcomsoftdailypage2);
-        scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
-        //--------------------------------------------------------------------------------------------
-
-
-        canvas.drawBitmap(scaledbmp,0 , 0, paint);
-
-
-        titlePaint.setTextSize(13);
-        paint.setTextAlign(Paint.Align.LEFT);
-
-        //--------------------------------Change below as per your requirement------------------------------------------------------
-        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,200,200, false), 475, 676, paint);  //  For signature printing used in the last page usually
-        titlePaint.setTextSize(13);
-
-        int[] editTextXPixel2 = {538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,538,144};
-
-        int[] editTextYPixel2 = {146,165,189,217,272,291,307,326,343,361,410,427,446,463,482,499,548,565,586,688};
-
-
-
-
-        // Change till here as per requirements ----------------------------------------------------
-
-        //***Fixed for all activity-------***But change the index passing in data arrays, required in other than page 1-------------------------------------------------------------
-
-        for(int i = 0; i < editTextXPixel2.length; i++){
-            canvas.drawText( editTextDataForPDF[i+ editTextXPixel1.length],editTextXPixel2[i],editTextYPixel2[i],titlePaint);
-        }
-
-
-
-
-        // Fixed till here--------------------------------------------------------------------------
-
-        // Change as per your requirement-----------------------------------------------------------
-        titlePaint.setTextSize(13);
-
-
-        myPdfdocument.finishPage(myPage2);
-
-
-        //---------------------End of Page 2---------------
 
         // ******************after writing all pages****************
 
@@ -342,14 +287,14 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
                 Manifest.permission.WRITE_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
 
 
-        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Surveillance/ADSB/Daily/";// Change Here------------------
+        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Surveillance/PSR/Weekly/";// Change Here------------------
         File file = new File(directory_path);
         if (!file.exists()) {
             file.mkdirs();
         }
         //String targetPdf = directory_path + "test.pdf";
         //String fileName = "Daily ADSB " + dateFormat.format(dateObj) + ".pdf";
-        String fileName = "Daily_ADSB_Comsoft" + strData + ".pdf"; // Change Here--------------------------
+        String fileName = "Weekly_PSR_Selex_ATCR33S " + strData + ".pdf"; // Change Here--------------------------
         String targetPdf = directory_path + fileName;
         File filePath = new File(targetPdf);
         try {
@@ -366,20 +311,18 @@ public class SurvADSBComsoftDailyActivity extends AppCompatActivity {
 
         //This function saves all the data to parse Server
         //myFunctions.saveToParse(String targetPdf, String fileName, String Equipment,String Schedule_Type,String EditTextData)
-        myFunctions.saveToParse(targetPdf, fileName,"ADSB","Daily",outputEditText,MyFunctions.specificCode("d"),outputSwitch,outputSpinner);// Change Here------------------
+        myFunctions.saveToParse(targetPdf, fileName,"RADAR","Weekly",outputEditText,MyFunctions.specificCode("w"),outputSwitch,"outputSpinner");// Change Here------------------
 
         // This function will send eMail using JavaMailAPI
         //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)
         myFunctions.sendEmail(PersonalDetailsActivity.emailTo + "@aai.aero",
-                "Daily Maintenance of COMSOFT ADSB done.",//Change Here-----------------------------
+                "Weekly Maintenance of SELEX ATCR33S DPC PSR done.",//Change Here-----------------------------
                 "Maintenance Schedule is attached. Please verify.", targetPdf, fileName);
         //---------------------------------------------------------------------------------------------------------
 
 
         myFunctions.toLogoutActivity();
     } //-------------End of generatePDF-----------
-
-
 
     //Copy this function in your activity completely without any change
     @Override
