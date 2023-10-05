@@ -2,41 +2,40 @@
 package com.aaiaero.emaintenance;
 
 import androidx.appcompat.app.AppCompatActivity;
-        import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityCompat;
 
-        import android.Manifest;
-        import android.annotation.SuppressLint;
-        import android.app.AlertDialog;
-        import android.content.DialogInterface;
-        import android.content.Intent;
-        import android.content.pm.PackageManager;
-        import android.graphics.Bitmap;
-        import android.graphics.BitmapFactory;
-        import android.graphics.Canvas;
-        import android.graphics.Paint;
-        import android.graphics.pdf.PdfDocument;
-        import android.os.Bundle;
-        import android.os.Environment;
-        import android.util.Log;
-        import android.view.Menu;
-        import android.view.MenuInflater;
-        import android.view.MenuItem;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.ImageView;
-        import android.widget.Spinner;
-        import android.widget.Switch;
-        import android.widget.TextView;
-        import android.widget.Toast;
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.pdf.PdfDocument;
+import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.Switch;
+import android.widget.TextView;
+import android.widget.Toast;
 
-        import java.io.File;
-        import java.io.FileOutputStream;
-        import java.io.IOException;
-        import java.text.SimpleDateFormat;
-        import java.util.Calendar;
-        import java.util.Date;
-        import java.util.Locale;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public class SurMssrNgoscoDailyActivity extends AppCompatActivity {
 
@@ -48,7 +47,7 @@ public class SurMssrNgoscoDailyActivity extends AppCompatActivity {
     private Switch[] switchArray;//Copy
     private Spinner[] spinnerArray;//Copy
 
-    private String thisActivityName = "activity_mssrngosco_daily"; //Change Here as per your class name
+    private String thisActivityName = "SurMssrNgoscoDailyActivity"; //Change Here as per your class name
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +58,7 @@ public class SurMssrNgoscoDailyActivity extends AppCompatActivity {
         @SuppressLint("UseSwitchCompatOrMaterialCode")
 
       /* All are serially numbered from 1. Total No.of, Edit texts = 49 (first 48 single line, 1 multiline), switches =10,
-            spinners = 7. image view- 2,  textviews = 71, Buttons = 2
+            spinners = 7. ,  textviews = 71, Buttons = 2
          */
 
                 //Define and Initialize all EditTexts serially here
@@ -329,7 +328,7 @@ public class SurMssrNgoscoDailyActivity extends AppCompatActivity {
                 400,400,400,400,400,400,400,400,400,400,
                 400,400,400,400,400,400,400,400,400};
 
-        int[] editTextYPixel2 = {130,150,174,198,222,246,273,296,325,350,
+        int[] editTextYPixel2 = {130,150,174,198,222,246,273,304,325,350,
                 375,400,425,450,475,500,527,552,577,602,
                 627,679,710,740,770,800,832,870,900};
 
@@ -376,7 +375,7 @@ public class SurMssrNgoscoDailyActivity extends AppCompatActivity {
         paint.setTextAlign(Paint.Align.LEFT);
 
         //--------------------------------Change as per your requirement------------------------------------------------------
-        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,210, false), 366, 728, paint);
+        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,290,270, false), 366, 728, paint);
         titlePaint.setTextSize(13);
 
         int[] editTextXPixel3 = {400,400,400,400,400,400,400,400,400,400,
@@ -401,7 +400,7 @@ public class SurMssrNgoscoDailyActivity extends AppCompatActivity {
             canvas.drawText( spinnerDataForPDF[i+spinnerXPixel1.length],spinnerXPixel3[i],spinnerYPixel3[i],titlePaint);
         }
 
-
+        canvas.drawText(strData,400,713,titlePaint);//Printing Date on PDF
 
         // Change as per your requirement-----------------------------------------------------------
         titlePaint.setTextSize(13);
@@ -445,11 +444,11 @@ public class SurMssrNgoscoDailyActivity extends AppCompatActivity {
         // This function will send eMail using JavaMailAPI
         //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)
         myFunctions.sendEmail(PersonalDetailsActivity.emailTo + "@aai.aero",
-              "Daily Maintenance of NGOSCO MSSR done.",//Change Here-----------------------------
-               "Maintenance Schedule is attached. Please verify.", targetPdf, fileName);
+                "Daily Maintenance of NGOSCO MSSR done.",//Change Here-----------------------------
+                "Maintenance Schedule is attached. Please verify.", targetPdf, fileName);
 
 
-      myFunctions.toLogoutActivity();
+        myFunctions.toLogoutActivity();
     }
 
     //Copy this function in your activity completely without any change

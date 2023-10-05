@@ -1,32 +1,23 @@
 package com.aaiaero.emaintenance;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import java.io.ByteArrayOutputStream;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class ADSBActivity extends AppCompatActivity {
-
-    Button daily, weekly, upsmonthly, monthly, quarterly, halfYearly, yearly, miscellaneous;
-
-
+public class sur_psr_selex extends AppCompatActivity {
+    Button daily, weekly, fortnightly, monthly, quarterly, halfYearly, yearly, miscellaneous;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adsb);
+        setContentView(R.layout.activity_sur_psr_selex);//xml file name you want to bond with this java file
+        setTitle("SELEX PSR Maintenance");
 
-        setTitle("ADS-B Maintenance");
-
-        daily = (Button) findViewById(R.id.daily);
+        daily = (Button) findViewById(R.id.dailypsr);
         weekly = (Button) findViewById(R.id.weekly);
-        upsmonthly = (Button) findViewById(R.id.UPSMonthly);
+        fortnightly = (Button) findViewById(R.id.fortnightly);
         monthly = (Button) findViewById(R.id.monthly);
         quarterly = (Button) findViewById(R.id.quarterly);
         halfYearly = (Button) findViewById(R.id.halfYearly);
@@ -37,42 +28,39 @@ public class ADSBActivity extends AppCompatActivity {
 
     }
 
-   public void dailyClicked (View view){
-        // Launch the VHF Equipment Room Activity
+    public void dailyClicked (View view){
 
-        Intent intent = new Intent(getApplicationContext(), SurvADSBComsoftDailyActivity.class);
+        Intent intent = new Intent(getApplicationContext(),psr_selex_si_atcr33_sdaily.class);
         startActivity(intent);
 
 
     }
 
     public void weeklyClicked (View view){
-        // Launch the DVR Equipment Room Activity
-
+        Intent intent = new Intent(getApplicationContext(),psr_selex_si_atcr33s_weekly.class);
+        startActivity(intent);
 
 
     }
 
- public void upsmonthlyClicked (View view){
+    public void fortnightlyClicked (View view){
+        // Launch the DATISEquipment Room Activity
 
-        Intent intent = new Intent(getApplicationContext(),surv_adsbcomsoft_upsmonthly.class);
-        startActivity(intent);
+
 
     }
 
     public void monthlyClicked (View view){
-        // Launch the VCS Equipment Room Activity
-
-        Intent intent = new Intent(getApplicationContext(), surv_adsbcomsoft_monthly.class);
+        Intent intent = new Intent(getApplicationContext(),psr_selex_si_atcr33s_monthly.class);
         startActivity(intent);
+
 
     }
 
     public void quaterlyClicked (View view){
         // Launch the RCAG Equipment Room Activity
 
-        Intent intent = new Intent(getApplicationContext(),surv_adsbcomsoft_quaterly.class);
-        startActivity(intent);
+
 
     }
 

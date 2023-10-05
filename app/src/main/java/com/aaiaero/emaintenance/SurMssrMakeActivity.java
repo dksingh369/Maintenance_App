@@ -14,13 +14,13 @@ public class SurMssrMakeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sur_mssr_make);
 
-        Button ngosco, raytheon, selex, indra, eldis;
+        Button ngosco, raytheon, selex, indra, eldis4;
 
         ngosco = (Button) findViewById(R.id.ngosco);
         raytheon = (Button) findViewById(R.id.raytheon);
         selex = (Button) findViewById(R.id.selex);
         indra = (Button) findViewById(R.id.indra);
-        eldis = (Button) findViewById(R.id.eldis);
+        eldis4 = (Button) findViewById(R.id.eldis4);
 
         ngosco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,10 +53,11 @@ public class SurMssrMakeActivity extends AppCompatActivity {
             }
         });
 
-        eldis.setOnClickListener(new View.OnClickListener() {
+        eldis4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getApplicationContext(),sur_ssr_eldis4.class);
+                startActivity(intent);
             }
         });
     }

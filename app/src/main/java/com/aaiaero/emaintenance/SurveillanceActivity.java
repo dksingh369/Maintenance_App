@@ -30,6 +30,8 @@ public class SurveillanceActivity extends AppCompatActivity {
 
     public void psrClicked (View view){
 
+        Intent intent = new Intent(getApplicationContext(),sur_psr_make.class);
+        startActivity(intent);
 
 
 
